@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import SwiftUI
 import JustTweak
 
 class ViewController: UIViewController {
@@ -74,13 +75,23 @@ class ViewController: UIViewController {
         return TweakViewController(style: .grouped, tweakManager: tweakManager)
     }
     
-    @IBAction func presentTweakViewController() {
-        let tweakNavigationController = UINavigationController(rootViewController: tweakViewController)
-        tweakNavigationController.navigationBar.prefersLargeTitles = true
-        present(tweakNavigationController, animated: true, completion: nil)
-    }
+//    @IBAction func presentTweakViewController() {
+//        let tweakNavigationController = UINavigationController(rootViewController: tweakViewController)
+//        tweakNavigationController.navigationBar.prefersLargeTitles = true
+//        present(tweakNavigationController, animated: true, completion: nil)
+//    }
     
     @IBAction func pushTweakViewController() {
         navigationController?.pushViewController(tweakViewController, animated: true)
     }
+
+    @IBAction func presentTweakViewController() {
+        let tweakViewController = UIHostingController(rootView: TweakView(tweakManager: tweakManager))
+        present(tweakViewController, animated: true, completion: nil)
+    }
+//
+//    @IBAction func pushTweakViewController() {
+//        let tweakViewController = UIHostingController(rootView: TweakView())
+//        navigationController?.pushViewController(tweakViewController, animated: true)
+//    }
 }
