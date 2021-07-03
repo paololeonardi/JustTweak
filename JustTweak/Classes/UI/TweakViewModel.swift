@@ -75,4 +75,10 @@ public class TweakViewModel: ObservableObject {
         }
     }
 
+    func update(_ tweak: Tweak, with value: TweakValue) {
+        let feature = tweak.feature
+        let variable = tweak.variable
+        tweakManager.set(value, feature: feature, variable: variable)
+    }
+
 }

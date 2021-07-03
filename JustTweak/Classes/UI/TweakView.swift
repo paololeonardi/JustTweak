@@ -12,14 +12,26 @@ public struct TweakView: View {
     public var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.sections.indices) { index in
-                    Section(header: Text(viewModel.sections[index].title)) {
-                        ForEach(viewModel.sections[index].tweaks.indices) { tweakIndex in
-                            if let _ = viewModel.sections[index].tweaks[tweakIndex].value as? Bool {
-                                ToogleCell(tweak: viewModel.sections[index].tweaks[tweakIndex])
+                ForEach(viewModel.sections, id: \.title) { section in
+                    Section(header: Text(section.title)) {
+                        ForEach(section.tweaks, id: \.title) { tweak in
+                            if let _ = tweak.value as? Bool {
+                                ToogleCell(tweak: tweak, value: tweak.value.boolValue) { newValue in
+                                    viewModel.update(tweak, with: newValue)
+                                }
                             }
                             else {
-                                TextCell(tweak: viewModel.sections[index].tweaks[tweakIndex])
+                                TextCell(tweak: tweak, value: tweak.value.description) { newValue in
+                                    if tweak.value is Bool, let newValue = Bool(newValue) {
+                                        viewModel.update(tweak, with: newValue)
+                                    }
+                                    else if tweak.value is Double, let newValue = Double(newValue) {
+                                        viewModel.update(tweak, with: newValue)
+                                    }
+                                    else {
+                                        viewModel.update(tweak, with: newValue)
+                                    }
+                                }
                             }
                         }
                     }
@@ -29,55 +41,52 @@ public struct TweakView: View {
             .navigationTitle("Edit Configuration")
         }
     }
-}
 
-struct TweakName: View {
-    let tweak: TweakViewModel.Tweak
+    private struct TweakName: View {
+        let tweak: TweakViewModel.Tweak
 
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(tweak.title)
-                .font(.body)
-            Text(tweak.desc ?? "")
-                .font(.caption)
+        var body: some View {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(tweak.title)
+                    .font(.body)
+                Text(tweak.desc ?? "")
+                    .font(.caption)
+            }
         }
     }
-}
 
-struct ToogleCell: View {
-    let tweak: TweakViewModel.Tweak
+    private struct ToogleCell: View {
+        let tweak: TweakViewModel.Tweak
+        @State var value: Bool
+        let didCHange: ((Bool) -> Void)
 
-    var body: some View {
-        let boolBinding = Binding(
-            get: { tweak.value as? Bool ?? false },
-            set: { tweak.value = $0 }
-        )
-
-        HStack {
-            TweakName(tweak: tweak)
-                .layoutPriority(100)
-            Spacer()
-            Toggle(isOn: boolBinding) {}
+        var body: some View {
+            HStack {
+                TweakName(tweak: tweak)
+                    .layoutPriority(100)
+                Spacer()
+                Toggle(isOn: $value) {}
+                .onChange(of: value) { _ in didCHange(value) }
+            }
         }
     }
-}
 
-struct TextCell: View {
-    let tweak: TweakViewModel.Tweak
+    private struct TextCell: View {
+        let tweak: TweakViewModel.Tweak
+        @State var value: String
+        let didCHange: ((String) -> Void)
 
-    var body: some View {
-        let stringBinding = Binding(
-            get: { tweak.value.description },
-            set: { tweak.value = $0 }
-        )
-
-        HStack() {
-            TweakName(tweak: tweak)
-                .layoutPriority(100)
-            Spacer()
-            TextField("", text: stringBinding)
-                .multilineTextAlignment(.trailing)
-                .frame(minWidth: 50)
+        var body: some View {
+            HStack() {
+                TweakName(tweak: tweak)
+                    .layoutPriority(100)
+                Spacer()
+                TextField("", text: $value, onCommit: {
+                    didCHange(value)
+                })
+                    .multilineTextAlignment(.trailing)
+                    .frame(minWidth: 50)
+            }
         }
     }
 }
