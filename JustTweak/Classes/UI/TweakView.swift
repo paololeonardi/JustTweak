@@ -3,7 +3,6 @@ import SwiftUI
 
 public struct TweakView: View {
     @ObservedObject var viewModel: TweakViewModel
-    @State private var searchText = ""
     
     public init(tweakManager: TweakManager) {
         viewModel = TweakViewModel(tweakManager: tweakManager)
@@ -12,7 +11,7 @@ public struct TweakView: View {
     public var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.sections, id: \.title) { section in
+                ForEach(viewModel.filteredSections, id: \.title) { section in
                     Section(header: Text(section.title)) {
                         ForEach(section.tweaks, id: \.title) { tweak in
                             if let _ = tweak.value as? Bool {
@@ -37,7 +36,7 @@ public struct TweakView: View {
                     }
                 }
             }
-            .searchable(text: $searchText, prompt: "Search Tweaks")
+            .searchable(text: $viewModel.searchText, prompt: "Search Tweaks")
             .navigationTitle("Edit Configuration")
         }
     }

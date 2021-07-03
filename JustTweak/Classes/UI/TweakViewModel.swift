@@ -4,27 +4,18 @@ public class TweakViewModel: ObservableObject {
 
     private let tweakManager: TweakManager
 
-    @Published var sections = [Section]()
-
-    struct Section {
-        let title: String
-        let tweaks: [Tweak]
+    private var sections = [Section]()
+    @Published var filteredSections = [Section]()
+    @Published var searchText: String = "" {
+        didSet {
+            filterContent(for: searchText)
+        }
     }
 
-    class Tweak {
-        var feature: String
-        var variable: String
-        var title: String
-        var desc: String?
-        var value: TweakValue
-
-        init(feature: String, variable: String, value: TweakValue, title: String, description: String?) {
-            self.feature = feature
-            self.variable = variable
-            self.value = value
-            self.title = title
-            self.desc = description
-        }
+    public init(tweakManager: TweakManager) {
+        self.tweakManager = tweakManager
+        rebuildSections()
+        filteredSections = sections
     }
 
     private static func justTweakResourcesBundle() -> Bundle {
@@ -39,11 +30,6 @@ public class TweakViewModel: ObservableObject {
                                  bundle: Self.justTweakResourcesBundle(),
                                  comment: "")
     }()
-
-    public init(tweakManager: TweakManager) {
-        self.tweakManager = tweakManager
-        rebuildSections()
-    }
 
     private func rebuildSections() {
         let allTweaks = tweakManager.displayableTweaks
@@ -75,10 +61,55 @@ public class TweakViewModel: ObservableObject {
         }
     }
 
+    func filterContent(for searchText: String) {
+        guard searchText.isEmpty == false else {
+            filteredSections = sections
+            return
+        }
+        filteredSections = [Section]()
+        for section in sections {
+            var filteredTweaks = [Tweak]()
+            for tweak in section.tweaks {
+                if tweak.title.lowercased().contains(searchText.lowercased()) {
+                    filteredTweaks.append(tweak)
+                }
+            }
+            if filteredTweaks.count > 0 {
+                let filteredSection = Section(title: section.title, tweaks: filteredTweaks)
+                filteredSections.append(filteredSection)
+            }
+        }
+    }
+
     func update(_ tweak: Tweak, with value: TweakValue) {
         let feature = tweak.feature
         let variable = tweak.variable
         tweakManager.set(value, feature: feature, variable: variable)
+    }
+
+}
+
+extension TweakViewModel {
+
+    struct Section {
+        let title: String
+        let tweaks: [Tweak]
+    }
+
+    class Tweak {
+        var feature: String
+        var variable: String
+        var title: String
+        var desc: String?
+        var value: TweakValue
+
+        init(feature: String, variable: String, value: TweakValue, title: String, description: String?) {
+            self.feature = feature
+            self.variable = variable
+            self.value = value
+            self.title = title
+            self.desc = description
+        }
     }
 
 }
