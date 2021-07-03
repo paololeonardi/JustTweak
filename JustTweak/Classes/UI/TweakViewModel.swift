@@ -5,7 +5,7 @@ public class TweakViewModel: ObservableObject {
     private let tweakManager: TweakManager
 
     private var sections = [Section]()
-    @Published var filteredSections = [Section]()
+    @Published private(set) var filteredSections = [Section]()
     @Published var searchText: String = "" {
         didSet {
             filterContent(for: searchText)
