@@ -19,7 +19,7 @@ public class TweakViewModel: ObservableObject {
     }
 
     private static func justTweakResourcesBundle() -> Bundle {
-        let podBundle = Bundle(for: TweakViewController.self)
+        let podBundle = Bundle(for: TweakViewModel.self)
         let resourcesBundleURL = podBundle.url(forResource: "JustTweak", withExtension: "bundle")!
         let justTweakResourcesBundle = Bundle(url: resourcesBundleURL)!
         return justTweakResourcesBundle

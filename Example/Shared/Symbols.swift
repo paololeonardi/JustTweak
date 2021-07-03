@@ -3,7 +3,6 @@
 //  Copyright (c) 2016 Just Eat Holding Ltd. All rights reserved.
 //
 
-import UIKit
 import JustTweak
 
 struct Features {

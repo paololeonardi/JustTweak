@@ -70,28 +70,14 @@ class ViewController: UIViewController {
                                        blue: randomColorValue(),
                                        alpha: 1.0)
     }
-    
-    private var tweakViewController: TweakViewController {
-        return TweakViewController(style: .grouped, tweakManager: tweakManager)
-    }
-    
-//    @IBAction func presentTweakViewController() {
-//        let tweakNavigationController = UINavigationController(rootViewController: tweakViewController)
-//        tweakNavigationController.navigationBar.prefersLargeTitles = true
-//        present(tweakNavigationController, animated: true, completion: nil)
-//    }
-    
-    @IBAction func pushTweakViewController() {
-        navigationController?.pushViewController(tweakViewController, animated: true)
-    }
 
     @IBAction func presentTweakViewController() {
         let tweakViewController = UIHostingController(rootView: TweakView(tweakManager: tweakManager))
         present(tweakViewController, animated: true, completion: nil)
     }
-//
-//    @IBAction func pushTweakViewController() {
-//        let tweakViewController = UIHostingController(rootView: TweakView())
-//        navigationController?.pushViewController(tweakViewController, animated: true)
-//    }
+
+    @IBAction func pushTweakViewController() {
+        let tweakViewController = UIHostingController(rootView: TweakView(tweakManager: tweakManager))
+        navigationController?.pushViewController(tweakViewController, animated: true)
+    }
 }
