@@ -5,6 +5,7 @@
 
 import JustTweak
 import UIKit
+import SwiftUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,11 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var tweakAccessor: GeneratedTweakAccessor!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        let navigationController = window?.rootViewController as! UINavigationController
-        let viewController = navigationController.topViewController as! ViewController
         tweakAccessor = GeneratedTweakAccessor(with: makeTweakManager())
-        viewController.tweakAccessor = tweakAccessor
-        viewController.tweakManager = tweakAccessor.tweakManager
+//        let navigationController = window?.rootViewController as! UINavigationController
+//        let viewController = navigationController.topViewController as! ViewController
+//        viewController.tweakAccessor = tweakAccessor
+//        viewController.tweakManager = tweakAccessor.tweakManager
+//        return true
+
+        let viewModel = ContentViewModel(tweakAccessor: tweakAccessor, tweakManager: tweakAccessor.tweakManager)
+        let contentView = ContentView(viewModel: viewModel)
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = UIHostingController(rootView: contentView)
+        self.window = window
+        window.makeKeyAndVisible()
         return true
     }
     

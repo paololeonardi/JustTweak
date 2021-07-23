@@ -22,6 +22,8 @@
 		4F65E89F2629D083009E8C3B /* LocalTweaks_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F65E89E2629D083009E8C3B /* LocalTweaks_example.json */; };
 		4F7103EE23859CFE0021E4AF /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7103ED23859CFD0021E4AF /* CustomOperators.swift */; };
 		51A8BD6A5E5948F41EEC2E66 /* Pods_JustTweak_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F594AA2DDEDFFA4C835EACCF /* Pods_JustTweak_Tests.framework */; };
+		5273218A26AA1EE9009BF645 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
+		5273218C26AB86BC009BF645 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 		4F7103ED23859CFD0021E4AF /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		4F86DA3F26CBBC2900DEC81C /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 		4FFF3DC5262B1789002A674D /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		5273218926AA1EE9009BF645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5273218B26AB86BC009BF645 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JustTweak_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTweak_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				5273218926AA1EE9009BF645 /* ContentView.swift */,
+				5273218B26AB86BC009BF645 /* ContentViewModel.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -516,7 +522,9 @@
 				4F6422A621A4205B002B69F0 /* Symbols.swift in Sources */,
 				12A323202630365500468F8C /* TweakAccessor.swift in Sources */,
 				12A3231E2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
+				5273218C26AB86BC009BF645 /* ContentViewModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5273218A26AA1EE9009BF645 /* ContentView.swift in Sources */,
 				12A323212630365500468F8C /* GeneratedTweakAccessor.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				12A3231F2630365500468F8C /* GeneratedTweakAccessor+Constants.swift in Sources */,
