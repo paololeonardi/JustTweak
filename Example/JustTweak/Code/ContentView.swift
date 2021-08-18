@@ -61,8 +61,7 @@ struct ContentView: View {
         .alert(isPresented: $showingAlert) {
             Alert(
                 title: Text("The Meaning of Life"),
-                message: Text(String(describing: viewModel.tweakAccessor.meaningOfLife)),
-                dismissButton: .default(Text("OK"))
+                message: Text(String(describing: viewModel.tweakAccessor.meaningOfLife))
             )
         }
     }

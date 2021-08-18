@@ -4,43 +4,50 @@
 //
 
 import JustTweak
-import UIKit
 import SwiftUI
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    var window: UIWindow?
-    var tweakAccessor: GeneratedTweakAccessor!
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        tweakAccessor = GeneratedTweakAccessor(with: makeTweakManager())
-//        let navigationController = window?.rootViewController as! UINavigationController
-//        let viewController = navigationController.topViewController as! ViewController
-//        viewController.tweakAccessor = tweakAccessor
-//        viewController.tweakManager = tweakAccessor.tweakManager
-//        return true
+@main
+struct ExampleForJustTweak: App {
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var showAlert = false
 
-        let viewModel = ContentViewModel(tweakAccessor: tweakAccessor, tweakManager: tweakAccessor.tweakManager)
-        let contentView = ContentView(viewModel: viewModel)
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: contentView)
-        self.window = window
-        window.makeKeyAndVisible()
-        return true
+    private let tweakAccessor: GeneratedTweakAccessor
+
+    init() {
+        tweakAccessor = GeneratedTweakAccessor(with: Self.makeTweakManager())
     }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        if tweakAccessor.shouldShowAlert {
-            let alertController = UIAlertController(title: "Hello",
-                                                    message: "Welcome to this Demo app!",
-                                                    preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
-            window?.rootViewController?.present(alertController, animated: true, completion: nil)
+
+    var body: some Scene {
+        WindowGroup {
+            ZStack {
+                makeContentView()
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .alert(isPresented: $showAlert) {
+                        Alert(
+                            title: Text("Hello"),
+                            message: Text("Welcome to this Demo app!"),
+                            dismissButton: .default(Text("Continue"))
+                        )
+                    }
+            }
+        }
+        .onChange(of: scenePhase) { newScenePhase in
+            switch newScenePhase {
+            case .active:
+                showAlert = tweakAccessor.shouldShowAlert
+            default:
+                break
+            }
         }
     }
-    
-    func makeTweakManager() -> TweakManager {
+
+    private func makeContentView() -> some View {
+        let viewModel = ContentViewModel(tweakAccessor: tweakAccessor, tweakManager: tweakAccessor.tweakManager)
+        return ContentView(viewModel: viewModel)
+    }
+
+    static func makeTweakManager() -> TweakManager {
         var tweakProviders: [TweakProvider] = []
 
         // EphemeralTweakProvider
