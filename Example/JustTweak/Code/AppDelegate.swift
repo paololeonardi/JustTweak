@@ -31,6 +31,7 @@ struct ExampleForJustTweak: App {
                         )
                     }
             }
+            .navigationViewStyle(.stack)
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {

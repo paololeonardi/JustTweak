@@ -57,7 +57,11 @@ struct ContentView: View {
             .navigationBarTitle("JustTweak", displayMode: .inline)
             .background(backgroundColor)
         }
-        .sheet(isPresented: $presentTweakView) { viewModel.tweakView }
+        .sheet(isPresented: $presentTweakView) {
+            NavigationView {
+                viewModel.tweakView
+            }
+        }
         .alert(isPresented: $showingAlert) {
             Alert(
                 title: Text("The Meaning of Life"),

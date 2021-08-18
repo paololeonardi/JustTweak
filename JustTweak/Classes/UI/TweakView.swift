@@ -9,36 +9,34 @@ public struct TweakView: View {
     }
     
     public var body: some View {
-        NavigationView {
-            List {
-                ForEach(viewModel.filteredSections, id: \.title) { section in
-                    Section(header: Text(section.title)) {
-                        ForEach(section.tweaks, id: \.title) { tweak in
-                            if let _ = tweak.value as? Bool {
-                                ToogleCell(tweak: tweak, value: tweak.value.boolValue) { newValue in
+        List {
+            ForEach(viewModel.filteredSections, id: \.title) { section in
+                Section(header: Text(section.title)) {
+                    ForEach(section.tweaks, id: \.title) { tweak in
+                        if let _ = tweak.value as? Bool {
+                            ToogleCell(tweak: tweak, value: tweak.value.boolValue) { newValue in
+                                viewModel.update(tweak, with: newValue)
+                            }
+                        }
+                        else {
+                            TextCell(tweak: tweak, value: tweak.value.description) { newValue in
+                                if tweak.value is Bool, let newValue = Bool(newValue) {
                                     viewModel.update(tweak, with: newValue)
                                 }
-                            }
-                            else {
-                                TextCell(tweak: tweak, value: tweak.value.description) { newValue in
-                                    if tweak.value is Bool, let newValue = Bool(newValue) {
-                                        viewModel.update(tweak, with: newValue)
-                                    }
-                                    else if tweak.value is Double, let newValue = Double(newValue) {
-                                        viewModel.update(tweak, with: newValue)
-                                    }
-                                    else {
-                                        viewModel.update(tweak, with: newValue)
-                                    }
+                                else if tweak.value is Double, let newValue = Double(newValue) {
+                                    viewModel.update(tweak, with: newValue)
+                                }
+                                else {
+                                    viewModel.update(tweak, with: newValue)
                                 }
                             }
                         }
                     }
                 }
             }
-            .searchable(text: $viewModel.searchText, prompt: "Search Tweaks")
-            .navigationTitle("Edit Configuration")
         }
+        .searchable(text: $viewModel.searchText, prompt: "Search Tweaks")
+        .navigationTitle("Edit Configuration")
     }
 
     private struct TweakName: View {
