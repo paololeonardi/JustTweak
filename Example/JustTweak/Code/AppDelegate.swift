@@ -31,7 +31,9 @@ struct ExampleForJustTweak: App {
                         )
                     }
             }
+            #if os(iOS)
             .navigationViewStyle(.stack)
+            #endif
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {

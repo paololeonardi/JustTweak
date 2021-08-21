@@ -22,7 +22,9 @@ class ContentViewModel: ObservableObject {
 
     var tweakView: some View {
         TweakView(tweakManager: tweakManager)
+        #if os(iOS)
             .navigationViewStyle(.stack)
+        #endif
     }
 
     func setMeaningOfLife() {

@@ -41,8 +41,10 @@ struct ContentView: View {
                             Text(viewModel.tweakAccessor.labelText)
                         }
                     }
+                    #if !os(tvOS)
                     .gesture(doubleTapGesture)
                     .simultaneousGesture(singleTapGesture)
+                    #endif
 
                     VStack(spacing: 16) {
                         Button("Change configuration (present)") {
@@ -54,7 +56,9 @@ struct ContentView: View {
                     }
                 }
             }
+            #if os(iOS)
             .navigationBarTitle("JustTweak", displayMode: .inline)
+            #endif
             .background(backgroundColor)
         }
         .sheet(isPresented: $presentTweakView) {
@@ -70,6 +74,7 @@ struct ContentView: View {
         }
     }
 
+    #if !os(tvOS)
     var singleTapGesture: some Gesture {
         TapGesture()
             .onEnded {
@@ -86,5 +91,6 @@ struct ContentView: View {
                 showingAlert = true
             }
     }
+    #endif
 
 }

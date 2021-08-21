@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E70C68BAB5F45B6DC853A04 /* Pods_JustTweakExample__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF8ADC94BC74601B0BAAB4 /* Pods_JustTweakExample__macOS_.framework */; };
 		12A3231E2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
 		12A3231F2630365500468F8C /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
 		12A323202630365500468F8C /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
 		12A323212630365500468F8C /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
 		12EB283F262F321500A7A89A /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
+		254B996C7B9A58234D072B53 /* Pods_JustTweakExample__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C88CAD5576848089B0BF6FA /* Pods_JustTweakExample__iOS_.framework */; };
 		4F0372B22387FE79003CA58E /* TweakManagerCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0372B12387FE79003CA58E /* TweakManagerCacheTests.swift */; };
 		4F38E0F1236E1BB60070BD17 /* PropertyWrappersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F38E0F0236E1BB60070BD17 /* PropertyWrappersTests.swift */; };
 		4F43583223E732DD00FD60A7 /* TweakManager+PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43583123E732DD00FD60A7 /* TweakManager+PresentationTests.swift */; };
@@ -22,8 +24,42 @@
 		4F65E89F2629D083009E8C3B /* LocalTweaks_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F65E89E2629D083009E8C3B /* LocalTweaks_example.json */; };
 		4F7103EE23859CFE0021E4AF /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7103ED23859CFD0021E4AF /* CustomOperators.swift */; };
 		51A8BD6A5E5948F41EEC2E66 /* Pods_JustTweak_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F594AA2DDEDFFA4C835EACCF /* Pods_JustTweak_Tests.framework */; };
+		5212A44E26CEFA210001B0A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5212A44D26CEFA210001B0A1 /* Preview Assets.xcassets */; };
 		5273218A26AA1EE9009BF645 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
 		5273218C26AB86BC009BF645 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
+		52855D2B26CEFDD300C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
+		52855D2C26CEFDD300C9748D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
+		52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		52855D2E26CEFDDF00C9748D /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
+		52855D2F26CEFDE500C9748D /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
+		52855D3026CEFDF400C9748D /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
+		52855D3126CEFDF400C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
+		52855D3226CEFDF400C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
+		52855D3326CEFDF400C9748D /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
+		52855D3426CEFE1300C9748D /* LocalTweaks_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F65E89E2629D083009E8C3B /* LocalTweaks_example.json */; };
+		52855D3526CEFE1300C9748D /* LocalTweaks_TopPriority_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 61D2DEBA1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json */; };
+		52855D3626CEFE1400C9748D /* LocalTweaks_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F65E89E2629D083009E8C3B /* LocalTweaks_example.json */; };
+		52855D3726CEFE1400C9748D /* LocalTweaks_TopPriority_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 61D2DEBA1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json */; };
+		52855D3826CEFE1400C9748D /* LocalTweaks_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F65E89E2629D083009E8C3B /* LocalTweaks_example.json */; };
+		52855D3926CEFE1400C9748D /* LocalTweaks_TopPriority_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 61D2DEBA1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json */; };
+		52855D3A26CEFE1C00C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		52855D3B26CEFE1C00C9748D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
+		52855D3C26CEFE1C00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
+		52855D3D26CEFE1C00C9748D /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
+		52855D3E26CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
+		52855D3F26CEFE1D00C9748D /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
+		52855D4026CEFE1D00C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
+		52855D4126CEFE1D00C9748D /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
+		52855D4226CEFE1D00C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		52855D4326CEFE1D00C9748D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
+		52855D4426CEFE1D00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
+		52855D4526CEFE1D00C9748D /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
+		52855D4626CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
+		52855D4726CEFE1D00C9748D /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
+		52855D4826CEFE1D00C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
+		52855D4926CEFE1D00C9748D /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
+		52855D4A26CEFE7100C9748D /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
+		52855D4B26CEFE7100C9748D /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -40,7 +76,8 @@
 		61D2DEBB1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 61D2DEBA1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json */; };
 		61F1DECE1DA7ECF700314DEC /* TweaksUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1DECD1DA7ECF700314DEC /* TweaksUtilitiesTests.swift */; };
 		61F1DECF1DA7EE6C00314DEC /* TweakManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1DEC91DA7ECD300314DEC /* TweakManagerTests.swift */; };
-		8D0BA4A3FCD875282B8A3ED3 /* Pods_JustTweak_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B347460C9476DF9F5F7BDF32 /* Pods_JustTweak_Example.framework */; };
+		88016B414FF9030036F4EA56 /* Pods_JustTweak_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BAD9122073BB7B5BE1729C /* Pods_JustTweak_Example.framework */; };
+		D6F933B794AD431738FBE393 /* Pods_JustTweakExample__tvOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81394828DD3313BFD62786F6 /* Pods_JustTweakExample__tvOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +96,11 @@
 		12A3231C2630365500468F8C /* TweakAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakAccessor.swift; sourceTree = "<group>"; };
 		12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedTweakAccessor.swift; sourceTree = "<group>"; };
 		12EB283E262F321500A7A89A /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
+		2074779E14E79FD996799E8B /* Pods-JustTweak_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweak_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2A3A7CF0048CBC9CF1917718 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3432AE8768ED164F737437EA /* Pods-JustTweak_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweak_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweak_Tests/Pods-JustTweak_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		347733CE12CE060AAE6CF0C3 /* Pods-JustTweakExample (tvOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (tvOS).debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS).debug.xcconfig"; sourceTree = "<group>"; };
+		3C88CAD5576848089B0BF6FA /* Pods_JustTweakExample__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweakExample__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0372B12387FE79003CA58E /* TweakManagerCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakManagerCacheTests.swift; sourceTree = "<group>"; };
 		4F30EA6B21ADA06A00AECF77 /* FirebaseTweakProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTweakProvider.swift; sourceTree = "<group>"; };
 		4F30EA6C21ADA06A00AECF77 /* OptimizelyTweakProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptimizelyTweakProvider.swift; sourceTree = "<group>"; };
@@ -73,8 +113,13 @@
 		4F7103ED23859CFD0021E4AF /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		4F86DA3F26CBBC2900DEC81C /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 		4FFF3DC5262B1789002A674D /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		5212A42E26CEF99E0001B0A1 /* JustTweakExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTweakExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5212A43326CEF99E0001B0A1 /* JustTweakExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTweakExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5212A44426CEFA210001B0A1 /* JustTweakExample (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JustTweakExample (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5212A44D26CEFA210001B0A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5273218926AA1EE9009BF645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5273218B26AB86BC009BF645 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5EDF8ADC94BC74601B0BAAB4 /* Pods_JustTweakExample__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweakExample__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JustTweak_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTweak_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,20 +141,49 @@
 		61F1DEC91DA7ECD300314DEC /* TweakManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakManagerTests.swift; sourceTree = "<group>"; };
 		61F1DECD1DA7ECF700314DEC /* TweaksUtilitiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweaksUtilitiesTests.swift; sourceTree = "<group>"; };
 		6817DC526CBFCF55440CC371 /* Pods-JustTweak_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweak_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweak_Tests/Pods-JustTweak_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		68BAD9122073BB7B5BE1729C /* Pods_JustTweak_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweak_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717A207AAAA041CC5BEE6B72 /* Pods-JustTweakExample (tvOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (tvOS).release.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS).release.xcconfig"; sourceTree = "<group>"; };
 		76FF00FC0F5A540F87BE8F55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7BB5DE150DE1839F89209889 /* Pods-JustTweakExample (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (iOS).release.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		7EE50C3432CD296F30FCC9F3 /* Pods-JustTweakExample (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (macOS).debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		81146C91EF73602F390082AB /* JustTweak.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JustTweak.podspec; path = ../JustTweak.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		885820D39A762E4E89BA2546 /* Pods-JustTweak_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweak_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9418360080E044BFF47F4F7C /* Pods-JustTweak_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweak_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B347460C9476DF9F5F7BDF32 /* Pods_JustTweak_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweak_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81394828DD3313BFD62786F6 /* Pods_JustTweakExample__tvOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweakExample__tvOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3DFAFF732AE7BBB96255CC /* Pods-JustTweakExample (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (iOS).debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		B44A5B16DA501BED6D877ED9 /* Pods-JustTweak_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweak_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E132C4C9F0F6EDA7BC330807 /* Pods-JustTweakExample (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (macOS).release.xcconfig"; path = "Pods/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		F594AA2DDEDFFA4C835EACCF /* Pods_JustTweak_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweak_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5212A42B26CEF99E0001B0A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254B996C7B9A58234D072B53 /* Pods_JustTweakExample__iOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5212A43026CEF99E0001B0A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E70C68BAB5F45B6DC853A04 /* Pods_JustTweakExample__macOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5212A44126CEFA210001B0A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F933B794AD431738FBE393 /* Pods_JustTweakExample__tvOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0BA4A3FCD875282B8A3ED3 /* Pods_JustTweak_Example.framework in Frameworks */,
+				88016B414FF9030036F4EA56 /* Pods_JustTweak_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +250,7 @@
 				61A561381DA6AC4B00839F7F /* GoogleService-Info.plist */,
 				4F6422A221A2FF8A002B69F0 /* ExampleOptimizelyDatafile.json */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				5212A44C26CEFA210001B0A1 /* Preview Content */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -198,6 +273,14 @@
 			path = CodeGeneration;
 			sourceTree = "<group>";
 		};
+		5212A44C26CEFA210001B0A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5212A44D26CEFA210001B0A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +299,9 @@
 			children = (
 				607FACD01AFB9204008FA782 /* JustTweak_Example.app */,
 				607FACE51AFB9204008FA782 /* JustTweak_Tests.xctest */,
+				5212A42E26CEF99E0001B0A1 /* JustTweakExample.app */,
+				5212A43326CEF99E0001B0A1 /* JustTweakExample.app */,
+				5212A44426CEFA210001B0A1 /* JustTweakExample (tvOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,10 +400,16 @@
 		A6193D26EFEA5DC6524A162D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9418360080E044BFF47F4F7C /* Pods-JustTweak_Example.debug.xcconfig */,
-				885820D39A762E4E89BA2546 /* Pods-JustTweak_Example.release.xcconfig */,
 				6817DC526CBFCF55440CC371 /* Pods-JustTweak_Tests.debug.xcconfig */,
 				3432AE8768ED164F737437EA /* Pods-JustTweak_Tests.release.xcconfig */,
+				8B3DFAFF732AE7BBB96255CC /* Pods-JustTweakExample (iOS).debug.xcconfig */,
+				7BB5DE150DE1839F89209889 /* Pods-JustTweakExample (iOS).release.xcconfig */,
+				7EE50C3432CD296F30FCC9F3 /* Pods-JustTweakExample (macOS).debug.xcconfig */,
+				E132C4C9F0F6EDA7BC330807 /* Pods-JustTweakExample (macOS).release.xcconfig */,
+				347733CE12CE060AAE6CF0C3 /* Pods-JustTweakExample (tvOS).debug.xcconfig */,
+				717A207AAAA041CC5BEE6B72 /* Pods-JustTweakExample (tvOS).release.xcconfig */,
+				B44A5B16DA501BED6D877ED9 /* Pods-JustTweak_Example.debug.xcconfig */,
+				2074779E14E79FD996799E8B /* Pods-JustTweak_Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -325,8 +417,11 @@
 		F85586C38DFEE1C16C21DD65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B347460C9476DF9F5F7BDF32 /* Pods_JustTweak_Example.framework */,
 				F594AA2DDEDFFA4C835EACCF /* Pods_JustTweak_Tests.framework */,
+				3C88CAD5576848089B0BF6FA /* Pods_JustTweakExample__iOS_.framework */,
+				5EDF8ADC94BC74601B0BAAB4 /* Pods_JustTweakExample__macOS_.framework */,
+				81394828DD3313BFD62786F6 /* Pods_JustTweakExample__tvOS_.framework */,
+				68BAD9122073BB7B5BE1729C /* Pods_JustTweak_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,16 +429,76 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5212A42D26CEF99E0001B0A1 /* JustTweakExample (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5212A43E26CEF99E0001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (iOS)" */;
+			buildPhases = (
+				52A7EA4BEE141F0294E10131 /* [CP] Check Pods Manifest.lock */,
+				FBE40CE2A3779B446B9F88E8 /* [CP-User] TweakAccessorGenerator */,
+				5212A42A26CEF99E0001B0A1 /* Sources */,
+				5212A42B26CEF99E0001B0A1 /* Frameworks */,
+				5212A42C26CEF99E0001B0A1 /* Resources */,
+				792378594DC186FEF9B2B101 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JustTweakExample (iOS)";
+			productName = "JustTweakExample (iOS)";
+			productReference = 5212A42E26CEF99E0001B0A1 /* JustTweakExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5212A43226CEF99E0001B0A1 /* JustTweakExample (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5212A43F26CEF99E0001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (macOS)" */;
+			buildPhases = (
+				4CA61ACA14EA17D253A15042 /* [CP] Check Pods Manifest.lock */,
+				DF5F42175E64A775D9B9EE8B /* [CP-User] TweakAccessorGenerator */,
+				5212A42F26CEF99E0001B0A1 /* Sources */,
+				5212A43026CEF99E0001B0A1 /* Frameworks */,
+				5212A43126CEF99E0001B0A1 /* Resources */,
+				26E1E103493CFF96A25F5116 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JustTweakExample (macOS)";
+			productName = "JustTweakExample (macOS)";
+			productReference = 5212A43326CEF99E0001B0A1 /* JustTweakExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5212A44326CEFA210001B0A1 /* JustTweakExample (tvOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5212A44F26CEFA210001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (tvOS)" */;
+			buildPhases = (
+				F5A49B5668B685B4C4541E1F /* [CP] Check Pods Manifest.lock */,
+				D091E77B31A41EDFD56D966A /* [CP-User] TweakAccessorGenerator */,
+				5212A44026CEFA210001B0A1 /* Sources */,
+				5212A44126CEFA210001B0A1 /* Frameworks */,
+				5212A44226CEFA210001B0A1 /* Resources */,
+				C7D84EDB369BD97C8EE29CD2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JustTweakExample (tvOS)";
+			productName = JustTweakExample;
+			productReference = 5212A44426CEFA210001B0A1 /* JustTweakExample (tvOS).app */;
+			productType = "com.apple.product-type.application";
+		};
 		607FACCF1AFB9204008FA782 /* JustTweak_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JustTweak_Example" */;
 			buildPhases = (
-				D768FEA0BAC54557A2874E32 /* [CP] Check Pods Manifest.lock */,
-				AE2D758BBB214ECA1116D055 /* [CP-User] TweakAccessorGenerator */,
+				84CE479E980363622F0CFF65 /* [CP] Check Pods Manifest.lock */,
+				6995F81C47DBC0DB72FBC002 /* [CP-User] TweakAccessorGenerator */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				EEB747579A8E00C8D94DB72D /* [CP] Embed Pods Frameworks */,
+				18CE675346B4426200F27A0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -379,10 +534,25 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Just Eat";
 				TargetAttributes = {
+					5212A42D26CEF99E0001B0A1 = {
+						CreatedOnToolsVersion = 13.0;
+						DevelopmentTeam = 695GNFL2MK;
+						ProvisioningStyle = Automatic;
+					};
+					5212A43226CEF99E0001B0A1 = {
+						CreatedOnToolsVersion = 13.0;
+						DevelopmentTeam = 695GNFL2MK;
+						ProvisioningStyle = Automatic;
+					};
+					5212A44326CEFA210001B0A1 = {
+						CreatedOnToolsVersion = 13.0;
+						DevelopmentTeam = 695GNFL2MK;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1020;
@@ -410,11 +580,42 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* JustTweak_Example */,
 				607FACE41AFB9204008FA782 /* JustTweak_Tests */,
+				5212A42D26CEF99E0001B0A1 /* JustTweakExample (iOS) */,
+				5212A43226CEF99E0001B0A1 /* JustTweakExample (macOS) */,
+				5212A44326CEFA210001B0A1 /* JustTweakExample (tvOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5212A42C26CEF99E0001B0A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52855D3426CEFE1300C9748D /* LocalTweaks_example.json in Resources */,
+				52855D3526CEFE1300C9748D /* LocalTweaks_TopPriority_example.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5212A43126CEF99E0001B0A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52855D3626CEFE1400C9748D /* LocalTweaks_example.json in Resources */,
+				52855D3726CEFE1400C9748D /* LocalTweaks_TopPriority_example.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5212A44226CEFA210001B0A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52855D3926CEFE1400C9748D /* LocalTweaks_TopPriority_example.json in Resources */,
+				5212A44E26CEFA210001B0A1 /* Preview Assets.xcassets in Resources */,
+				52855D3826CEFE1400C9748D /* LocalTweaks_example.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,7 +641,87 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AE2D758BBB214ECA1116D055 /* [CP-User] TweakAccessorGenerator */ = {
+		18CE675346B4426200F27A0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-iOS/JustTweak.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26E1E103493CFF96A25F5116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-macOS/JustTweak.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA61ACA14EA17D253A15042 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustTweakExample (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52A7EA4BEE141F0294E10131 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustTweakExample (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6995F81C47DBC0DB72FBC002 /* [CP-User] TweakAccessorGenerator */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,7 +729,75 @@
 			name = "[CP-User] TweakAccessorGenerator";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/\n";
+			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
+		};
+		792378594DC186FEF9B2B101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-iOS/JustTweak.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84CE479E980363622F0CFF65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustTweak_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D84EDB369BD97C8EE29CD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-tvOS/JustTweak.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D091E77B31A41EDFD56D966A /* [CP-User] TweakAccessorGenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] TweakAccessorGenerator";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
 		};
 		D2F894A2A9B802CCF5D931F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -468,45 +817,99 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D768FEA0BAC54557A2874E32 /* [CP] Check Pods Manifest.lock */ = {
+		DF5F42175E64A775D9B9EE8B /* [CP-User] TweakAccessorGenerator */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			name = "[CP-User] TweakAccessorGenerator";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
+		};
+		F5A49B5668B685B4C4541E1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JustTweak_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-JustTweakExample (tvOS)-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EEB747579A8E00C8D94DB72D /* [CP] Embed Pods Frameworks */ = {
+		FBE40CE2A3779B446B9F88E8 /* [CP-User] TweakAccessorGenerator */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JustTweak/JustTweak.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
-			);
+			name = "[CP-User] TweakAccessorGenerator";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5212A42A26CEF99E0001B0A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52855D2F26CEFDE500C9748D /* Symbols.swift in Sources */,
+				52855D3326CEFDF400C9748D /* GeneratedTweakAccessor.swift in Sources */,
+				52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */,
+				52855D3226CEFDF400C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
+				52855D2C26CEFDD300C9748D /* ContentViewModel.swift in Sources */,
+				52855D3026CEFDF400C9748D /* TweakAccessor.swift in Sources */,
+				52855D2E26CEFDDF00C9748D /* ExampleProtocol.swift in Sources */,
+				52855D3126CEFDF400C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
+				52855D2B26CEFDD300C9748D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5212A42F26CEF99E0001B0A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52855D4A26CEFE7100C9748D /* Symbols.swift in Sources */,
+				52855D3E26CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
+				52855D3C26CEFE1C00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
+				52855D4026CEFE1D00C9748D /* ContentView.swift in Sources */,
+				52855D3D26CEFE1C00C9748D /* GeneratedTweakAccessor.swift in Sources */,
+				52855D3F26CEFE1D00C9748D /* TweakAccessor.swift in Sources */,
+				52855D3B26CEFE1C00C9748D /* ContentViewModel.swift in Sources */,
+				52855D4126CEFE1D00C9748D /* ExampleProtocol.swift in Sources */,
+				52855D3A26CEFE1C00C9748D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5212A44026CEFA210001B0A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52855D4B26CEFE7100C9748D /* Symbols.swift in Sources */,
+				52855D4626CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
+				52855D4426CEFE1D00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
+				52855D4826CEFE1D00C9748D /* ContentView.swift in Sources */,
+				52855D4526CEFE1D00C9748D /* GeneratedTweakAccessor.swift in Sources */,
+				52855D4726CEFE1D00C9748D /* TweakAccessor.swift in Sources */,
+				52855D4326CEFE1D00C9748D /* ContentViewModel.swift in Sources */,
+				52855D4926CEFE1D00C9748D /* ExampleProtocol.swift in Sources */,
+				52855D4226CEFE1D00C9748D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,6 +970,234 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5212A43A26CEF99E0001B0A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3DFAFF732AE7BBB96255CC /* Pods-JustTweakExample (iOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JustTweak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweakExample;
+				PRODUCT_NAME = JustTweakExample;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5212A43B26CEF99E0001B0A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB5DE150DE1839F89209889 /* Pods-JustTweakExample (iOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JustTweak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweakExample;
+				PRODUCT_NAME = JustTweakExample;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5212A43C26CEF99E0001B0A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE50C3432CD296F30FCC9F3 /* Pods-JustTweakExample (macOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Just Eat. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweakExample;
+				PRODUCT_NAME = JustTweakExample;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5212A43D26CEF99E0001B0A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E132C4C9F0F6EDA7BC330807 /* Pods-JustTweakExample (macOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Just Eat. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweakExample;
+				PRODUCT_NAME = JustTweakExample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5212A45026CEFA210001B0A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347733CE12CE060AAE6CF0C3 /* Pods-JustTweakExample (tvOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"JustTweak/Assets/Preview Content\"";
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweakExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		5212A45126CEFA210001B0A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717A207AAAA041CC5BEE6B72 /* Pods-JustTweakExample (tvOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JustTweak/Assets/Preview Content\"";
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweakExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -680,7 +1311,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9418360080E044BFF47F4F7C /* Pods-JustTweak_Example.debug.xcconfig */;
+			baseConfigurationReference = B44A5B16DA501BED6D877ED9 /* Pods-JustTweak_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -696,7 +1327,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 885820D39A762E4E89BA2546 /* Pods-JustTweak_Example.release.xcconfig */;
+			baseConfigurationReference = 2074779E14E79FD996799E8B /* Pods-JustTweak_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -748,6 +1379,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5212A43E26CEF99E0001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5212A43A26CEF99E0001B0A1 /* Debug */,
+				5212A43B26CEF99E0001B0A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5212A43F26CEF99E0001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5212A43C26CEF99E0001B0A1 /* Debug */,
+				5212A43D26CEF99E0001B0A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5212A44F26CEFA210001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (tvOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5212A45026CEFA210001B0A1 /* Debug */,
+				5212A45126CEFA210001B0A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "JustTweak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
