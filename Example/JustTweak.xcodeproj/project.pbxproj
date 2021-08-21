@@ -8,25 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0E70C68BAB5F45B6DC853A04 /* Pods_JustTweakExample__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF8ADC94BC74601B0BAAB4 /* Pods_JustTweakExample__macOS_.framework */; };
-		12A3231E2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
-		12A3231F2630365500468F8C /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
-		12A323202630365500468F8C /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
-		12A323212630365500468F8C /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
-		12EB283F262F321500A7A89A /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
 		254B996C7B9A58234D072B53 /* Pods_JustTweakExample__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C88CAD5576848089B0BF6FA /* Pods_JustTweakExample__iOS_.framework */; };
 		4F0372B22387FE79003CA58E /* TweakManagerCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0372B12387FE79003CA58E /* TweakManagerCacheTests.swift */; };
 		4F38E0F1236E1BB60070BD17 /* PropertyWrappersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F38E0F0236E1BB60070BD17 /* PropertyWrappersTests.swift */; };
 		4F43583223E732DD00FD60A7 /* TweakManager+PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43583123E732DD00FD60A7 /* TweakManager+PresentationTests.swift */; };
 		4F43583423E7332D00FD60A7 /* LocalTweaks_test_override.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F43583323E7332D00FD60A7 /* LocalTweaks_test_override.json */; };
-		4F6422A321A2FF8A002B69F0 /* ExampleOptimizelyDatafile.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F6422A221A2FF8A002B69F0 /* ExampleOptimizelyDatafile.json */; };
-		4F6422A621A4205B002B69F0 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
 		4F6422A721A4205B002B69F0 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
-		4F65E89F2629D083009E8C3B /* LocalTweaks_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F65E89E2629D083009E8C3B /* LocalTweaks_example.json */; };
 		4F7103EE23859CFE0021E4AF /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7103ED23859CFD0021E4AF /* CustomOperators.swift */; };
 		51A8BD6A5E5948F41EEC2E66 /* Pods_JustTweak_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F594AA2DDEDFFA4C835EACCF /* Pods_JustTweak_Tests.framework */; };
 		5212A44E26CEFA210001B0A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5212A44D26CEFA210001B0A1 /* Preview Assets.xcassets */; };
-		5273218A26AA1EE9009BF645 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
-		5273218C26AB86BC009BF645 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
 		52855D2B26CEFDD300C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
 		52855D2C26CEFDD300C9748D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
 		52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -60,35 +50,19 @@
 		52855D4926CEFE1D00C9748D /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
 		52855D4A26CEFE7100C9748D /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
 		52855D4B26CEFE7100C9748D /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		618A46CC1DAD481400B8F5CA /* TweakExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618A46CB1DAD481400B8F5CA /* TweakExtensionsTests.swift */; };
 		618A46CE1DAD4DC500B8F5CA /* UserDefaultsTweakProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618A46CD1DAD4DC500B8F5CA /* UserDefaultsTweakProviderTests.swift */; };
 		619938D81DA7F2DA00765852 /* TweakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619938D71DA7F2DA00765852 /* TweakTests.swift */; };
 		619938DC1DA7F6E600765852 /* TweakViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619938DB1DA7F6E600765852 /* TweakViewControllerTests.swift */; };
 		619938E01DA805BA00765852 /* LocalTweakProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619938DF1DA805BA00765852 /* LocalTweakProviderTests.swift */; };
-		61A561391DA6AC4B00839F7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61A561381DA6AC4B00839F7F /* GoogleService-Info.plist */; };
 		61A561411DA7B65200839F7F /* LocalTweaks_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 61A5613F1DA7B64900839F7F /* LocalTweaks_test.json */; };
 		61BE051B1DAE868900288EC7 /* BooleanTweakTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BE051A1DAE868900288EC7 /* BooleanTweakTableViewCellTests.swift */; };
 		61BE051E1DAE878600288EC7 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BE051D1DAE878600288EC7 /* TestHelpers.swift */; };
 		61BE05201DAE88A100288EC7 /* TextTweakTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BE051F1DAE88A100288EC7 /* TextTweakTableViewCellTests.swift */; };
-		61D2DEBB1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 61D2DEBA1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json */; };
 		61F1DECE1DA7ECF700314DEC /* TweaksUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1DECD1DA7ECF700314DEC /* TweaksUtilitiesTests.swift */; };
 		61F1DECF1DA7EE6C00314DEC /* TweakManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1DEC91DA7ECD300314DEC /* TweakManagerTests.swift */; };
-		88016B414FF9030036F4EA56 /* Pods_JustTweak_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BAD9122073BB7B5BE1729C /* Pods_JustTweak_Example.framework */; };
 		D6F933B794AD431738FBE393 /* Pods_JustTweakExample__tvOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81394828DD3313BFD62786F6 /* Pods_JustTweakExample__tvOS_.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = JustTweak;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeneratedConfigurationAccessor+ExampleProtocol.swift"; sourceTree = "<group>"; };
@@ -120,7 +94,6 @@
 		5273218926AA1EE9009BF645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5273218B26AB86BC009BF645 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		5EDF8ADC94BC74601B0BAAB4 /* Pods_JustTweakExample__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweakExample__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD01AFB9204008FA782 /* JustTweak_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTweak_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -176,14 +149,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F933B794AD431738FBE393 /* Pods_JustTweakExample__tvOS_.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACCD1AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88016B414FF9030036F4EA56 /* Pods_JustTweak_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +262,6 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* JustTweak_Example.app */,
 				607FACE51AFB9204008FA782 /* JustTweak_Tests.xctest */,
 				5212A42E26CEF99E0001B0A1 /* JustTweakExample.app */,
 				5212A43326CEF99E0001B0A1 /* JustTweakExample.app */,
@@ -489,26 +453,6 @@
 			productReference = 5212A44426CEFA210001B0A1 /* JustTweakExample (tvOS).app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACCF1AFB9204008FA782 /* JustTweak_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JustTweak_Example" */;
-			buildPhases = (
-				84CE479E980363622F0CFF65 /* [CP] Check Pods Manifest.lock */,
-				6995F81C47DBC0DB72FBC002 /* [CP-User] TweakAccessorGenerator */,
-				607FACCC1AFB9204008FA782 /* Sources */,
-				607FACCD1AFB9204008FA782 /* Frameworks */,
-				607FACCE1AFB9204008FA782 /* Resources */,
-				18CE675346B4426200F27A0E /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JustTweak_Example;
-			productName = JustTweak;
-			productReference = 607FACD01AFB9204008FA782 /* JustTweak_Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 		607FACE41AFB9204008FA782 /* JustTweak_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JustTweak_Tests" */;
@@ -521,7 +465,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = JustTweak_Tests;
 			productName = Tests;
@@ -553,10 +496,6 @@
 						DevelopmentTeam = 695GNFL2MK;
 						ProvisioningStyle = Automatic;
 					};
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 1020;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1020;
@@ -578,7 +517,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* JustTweak_Example */,
 				607FACE41AFB9204008FA782 /* JustTweak_Tests */,
 				5212A42D26CEF99E0001B0A1 /* JustTweakExample (iOS) */,
 				5212A43226CEF99E0001B0A1 /* JustTweakExample (macOS) */,
@@ -616,19 +554,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACCE1AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61D2DEBB1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json in Resources */,
-				61A561391DA6AC4B00839F7F /* GoogleService-Info.plist in Resources */,
-				4F65E89F2629D083009E8C3B /* LocalTweaks_example.json in Resources */,
-				4F6422A321A2FF8A002B69F0 /* ExampleOptimizelyDatafile.json in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -641,24 +566,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18CE675346B4426200F27A0E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JustTweak-iOS/JustTweak.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweak_Example/Pods-JustTweak_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		26E1E103493CFF96A25F5116 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,16 +628,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6995F81C47DBC0DB72FBC002 /* [CP-User] TweakAccessorGenerator */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] TweakAccessorGenerator";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
-		};
 		792378594DC186FEF9B2B101 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -747,28 +644,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		84CE479E980363622F0CFF65 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JustTweak_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7D84EDB369BD97C8EE29CD2 /* [CP] Embed Pods Frameworks */ = {
@@ -910,22 +785,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACCC1AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12EB283F262F321500A7A89A /* ExampleProtocol.swift in Sources */,
-				4F6422A621A4205B002B69F0 /* Symbols.swift in Sources */,
-				12A323202630365500468F8C /* TweakAccessor.swift in Sources */,
-				12A3231E2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
-				5273218C26AB86BC009BF645 /* ContentViewModel.swift in Sources */,
-				5273218A26AA1EE9009BF645 /* ContentView.swift in Sources */,
-				12A323212630365500468F8C /* GeneratedTweakAccessor.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				12A3231F2630365500468F8C /* GeneratedTweakAccessor+Constants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE11AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -949,14 +808,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* JustTweak_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
@@ -1309,38 +1160,6 @@
 			};
 			name = Release;
 		};
-		607FACF01AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B44A5B16DA501BED6D877ED9 /* Pods-JustTweak_Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = JustTweak/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweak.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		607FACF11AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2074779E14E79FD996799E8B /* Pods-JustTweak_Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = JustTweak/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.justeat.JustTweak.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6817DC526CBFCF55440CC371 /* Pods-JustTweak_Tests.debug.xcconfig */;
@@ -1411,15 +1230,6 @@
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
 				607FACEE1AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JustTweak_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF01AFB9204008FA782 /* Debug */,
-				607FACF11AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

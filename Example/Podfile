@@ -11,18 +11,13 @@ def shared_pod
                :execution_position => :before_compile
 end
 
-target 'JustTweak_Example' do
+target 'JustTweakExample (iOS)' do
   platform :ios, '15.0'
   shared_pod
 
   target 'JustTweak_Tests' do
     inherit! :search_paths
   end
-end
-
-target 'JustTweakExample (iOS)' do
-  platform :ios, '15.0'
-  shared_pod
 end
 
 target 'JustTweakExample (macOS)' do
