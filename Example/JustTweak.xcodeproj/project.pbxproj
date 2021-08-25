@@ -19,7 +19,6 @@
 		52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		52855D2E26CEFDDF00C9748D /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
 		52855D2F26CEFDE500C9748D /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
-		52855D3026CEFDF400C9748D /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
 		52855D3126CEFDF400C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
 		52855D3226CEFDF400C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
 		52855D3326CEFDF400C9748D /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
@@ -34,7 +33,6 @@
 		52855D3C26CEFE1C00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
 		52855D3D26CEFE1C00C9748D /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
 		52855D3E26CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
-		52855D3F26CEFE1D00C9748D /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
 		52855D4026CEFE1D00C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
 		52855D4126CEFE1D00C9748D /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
 		52855D4226CEFE1D00C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -42,7 +40,6 @@
 		52855D4426CEFE1D00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
 		52855D4526CEFE1D00C9748D /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
 		52855D4626CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
-		52855D4726CEFE1D00C9748D /* TweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231C2630365500468F8C /* TweakAccessor.swift */; };
 		52855D4826CEFE1D00C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
 		52855D4926CEFE1D00C9748D /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
 		52855D4A26CEFE7100C9748D /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
@@ -66,7 +63,6 @@
 /* Begin PBXFileReference section */
 		12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeneratedConfigurationAccessor+ExampleProtocol.swift"; sourceTree = "<group>"; };
 		12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeneratedTweakAccessor+Constants.swift"; sourceTree = "<group>"; };
-		12A3231C2630365500468F8C /* TweakAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakAccessor.swift; sourceTree = "<group>"; };
 		12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedTweakAccessor.swift; sourceTree = "<group>"; };
 		12EB283E262F321500A7A89A /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
 		2A3A7CF0048CBC9CF1917718 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -153,7 +149,6 @@
 				12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */,
 				12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */,
 				12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */,
-				12A3231C2630365500468F8C /* TweakAccessor.swift */,
 			);
 			path = Accessors;
 			sourceTree = "<group>";
@@ -596,7 +591,6 @@
 				52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */,
 				52855D3226CEFDF400C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
 				52855D2C26CEFDD300C9748D /* ContentViewModel.swift in Sources */,
-				52855D3026CEFDF400C9748D /* TweakAccessor.swift in Sources */,
 				52855D2E26CEFDDF00C9748D /* ExampleProtocol.swift in Sources */,
 				52855D3126CEFDF400C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
 				52855D2B26CEFDD300C9748D /* ContentView.swift in Sources */,
@@ -612,7 +606,6 @@
 				52855D3C26CEFE1C00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
 				52855D4026CEFE1D00C9748D /* ContentView.swift in Sources */,
 				52855D3D26CEFE1C00C9748D /* GeneratedTweakAccessor.swift in Sources */,
-				52855D3F26CEFE1D00C9748D /* TweakAccessor.swift in Sources */,
 				52855D3B26CEFE1C00C9748D /* ContentViewModel.swift in Sources */,
 				52855D4126CEFE1D00C9748D /* ExampleProtocol.swift in Sources */,
 				52855D3A26CEFE1C00C9748D /* AppDelegate.swift in Sources */,
@@ -628,7 +621,6 @@
 				52855D4426CEFE1D00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
 				52855D4826CEFE1D00C9748D /* ContentView.swift in Sources */,
 				52855D4526CEFE1D00C9748D /* GeneratedTweakAccessor.swift in Sources */,
-				52855D4726CEFE1D00C9748D /* TweakAccessor.swift in Sources */,
 				52855D4326CEFE1D00C9748D /* ContentViewModel.swift in Sources */,
 				52855D4926CEFE1D00C9748D /* ExampleProtocol.swift in Sources */,
 				52855D4226CEFE1D00C9748D /* AppDelegate.swift in Sources */,

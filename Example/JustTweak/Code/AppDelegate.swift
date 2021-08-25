@@ -54,7 +54,7 @@ struct ExampleForJustTweak: App {
         var tweakProviders: [TweakProvider] = []
 
         // EphemeralTweakProvider
-        #if DEBUG || CONFIGURATION_UI_TESTS
+        #if CONFIGURATION_UI_TESTS
         let ephemeralTweakProvider_1 = NSMutableDictionary()
         tweakProviders.append(ephemeralTweakProvider_1)
         #endif
@@ -64,6 +64,15 @@ struct ExampleForJustTweak: App {
         let userDefaultsTweakProvider_1 = UserDefaultsTweakProvider(userDefaults: UserDefaults.standard)
         tweakProviders.append(userDefaultsTweakProvider_1)
         #endif
+
+        // OptimizelyTweakProvider
+        // let optimizelyTweakProvider = OptimizelyTweakProvider()
+        // optimizelyTweakProvider.userId = UUID().uuidString
+        // tweakProviders.append(optimizelyTweakProvider)
+
+        // FirebaseTweakProvider
+        // let firebaseTweakProvider = FirebaseTweakProvider()
+        // tweakProviders.append(firebaseTweakProvider)
 
         // LocalTweakProvider
         #if DEBUG
