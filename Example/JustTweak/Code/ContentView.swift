@@ -10,7 +10,7 @@ struct ContentView: View {
 
     @State private var showingAlert = false
     @State private var presentTweakView = false
-    @State private var backgroundColor: Color = .white
+    @State private var backgroundColor: Color?
 
     @ObservedObject var viewModel: ContentViewModel
 
@@ -35,11 +35,12 @@ struct ContentView: View {
                             }
                         }
                         .frame(width: geometry.size.width, height: geometry.size.height / 2)
-                        ZStack(alignment: .top) {
-                            Rectangle()
-                                .foregroundColor(backgroundColor)
-                            Text(viewModel.tweakAccessor.labelText)
-                        }
+                        Text(viewModel.tweakAccessor.labelText)
+                            .font(.headline)
+                            .padding()
+                        Rectangle()
+                            .border(.blue, width: 5)
+                            .foregroundColor(backgroundColor)
                     }
                     #if !os(tvOS)
                     .gesture(doubleTapGesture)
@@ -47,23 +48,40 @@ struct ContentView: View {
                     #endif
 
                     VStack(spacing: 16) {
+                        #if os(iOS)
                         Button("Change configuration (present)") {
                             presentTweakView.toggle()
                         }
+                        #endif
                         NavigationLink(destination: viewModel.tweakView) {
                             Text("Change configuration (push)")
                         }
                     }
+                    .padding()
                 }
             }
             #if os(iOS)
             .navigationBarTitle("JustTweak", displayMode: .inline)
             #endif
-            .background(backgroundColor)
         }
         .sheet(isPresented: $presentTweakView) {
             NavigationView {
                 viewModel.tweakView
+                    .toolbar(content: {
+                        #if os(iOS)
+                        let placement: ToolbarItemPlacement = .navigationBarLeading
+                        #else
+                        let placement: ToolbarItemPlacement = .automatic
+                        #endif
+                        ToolbarItem(placement: placement) {
+                            Button(action: {
+                                presentTweakView = false
+                            }, label: {
+                                Text("Done")
+                                    .bold()
+                            })
+                        }
+                    })
             }
         }
         .alert(isPresented: $showingAlert) {
