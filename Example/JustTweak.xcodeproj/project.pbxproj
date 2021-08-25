@@ -359,6 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5212A43E26CEF99E0001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (iOS)" */;
 			buildPhases = (
+				52EA898926D684A100CA3EFE /* TweakAccessorGenerator */,
 				5212A42A26CEF99E0001B0A1 /* Sources */,
 				5212A42B26CEF99E0001B0A1 /* Frameworks */,
 				5212A42C26CEF99E0001B0A1 /* Resources */,
@@ -379,6 +380,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5212A43F26CEF99E0001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (macOS)" */;
 			buildPhases = (
+				52EA898A26D68EC200CA3EFE /* TweakAccessorGenerator */,
 				5212A42F26CEF99E0001B0A1 /* Sources */,
 				5212A43026CEF99E0001B0A1 /* Frameworks */,
 				5212A43126CEF99E0001B0A1 /* Resources */,
@@ -399,6 +401,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5212A44F26CEFA210001B0A1 /* Build configuration list for PBXNativeTarget "JustTweakExample (tvOS)" */;
 			buildPhases = (
+				52EA898B26D68EFE00CA3EFE /* TweakAccessorGenerator */,
 				5212A44026CEFA210001B0A1 /* Sources */,
 				5212A44126CEFA210001B0A1 /* Frameworks */,
 				5212A44226CEFA210001B0A1 /* Resources */,
@@ -525,6 +528,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52EA898926D684A100CA3EFE /* TweakAccessorGenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = TweakAccessorGenerator;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/../Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/\n";
+		};
+		52EA898A26D68EC200CA3EFE /* TweakAccessorGenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = TweakAccessorGenerator;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/../Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/\n";
+		};
+		52EA898B26D68EFE00CA3EFE /* TweakAccessorGenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = TweakAccessorGenerator;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/../Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5212A42A26CEF99E0001B0A1 /* Sources */ = {
