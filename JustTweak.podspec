@@ -22,8 +22,8 @@ JustTweak is a framework for feature flagging, locally and remotely configure an
 
   s.swift_version           = '5.1'
 
-  s.source_files            = 'JustTweak/Classes/**/*.swift'
-  s.resource_bundle         = { 'JustTweak' => 'JustTweak/Assets/en.lproj/*' }
+  s.source_files            = 'Sources/JustTweak/Classes/**/*.swift'
+  s.resource_bundle         = { 'JustTweak' => 'Sources/JustTweak/Assets/en.lproj/*' }
 
   s.preserve_paths = [
     '_TweakAccessorGenerator',
@@ -32,7 +32,7 @@ JustTweak is a framework for feature flagging, locally and remotely configure an
   # Ensure the generator script are callable via
   # ${PODS_ROOT}/<name>
   s.prepare_command = <<-PREPARE_COMMAND_END
-    cp -f ./JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator ./_TweakAccessorGenerator
+    cp -f ./Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator ./_TweakAccessorGenerator
   PREPARE_COMMAND_END
 
 end

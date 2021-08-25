@@ -402,7 +402,7 @@
 				5212A42A26CEF99E0001B0A1 /* Sources */,
 				5212A42B26CEF99E0001B0A1 /* Frameworks */,
 				5212A42C26CEF99E0001B0A1 /* Resources */,
-				792378594DC186FEF9B2B101 /* [CP] Embed Pods Frameworks */,
+				1CA7FC53A5F4A85F99526786 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,7 +422,7 @@
 				5212A42F26CEF99E0001B0A1 /* Sources */,
 				5212A43026CEF99E0001B0A1 /* Frameworks */,
 				5212A43126CEF99E0001B0A1 /* Resources */,
-				26E1E103493CFF96A25F5116 /* [CP] Embed Pods Frameworks */,
+				F4B242ED437F798DD6FC23F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -442,7 +442,7 @@
 				5212A44026CEFA210001B0A1 /* Sources */,
 				5212A44126CEFA210001B0A1 /* Frameworks */,
 				5212A44226CEFA210001B0A1 /* Resources */,
-				C7D84EDB369BD97C8EE29CD2 /* [CP] Embed Pods Frameworks */,
+				EFB8E95578CCDE5812B6E39E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -566,14 +566,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26E1E103493CFF96A25F5116 /* [CP] Embed Pods Frameworks */ = {
+		1CA7FC53A5F4A85F99526786 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS)-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JustTweak-macOS/JustTweak.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-iOS/JustTweak.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -581,7 +581,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS)-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4CA61ACA14EA17D253A15042 /* [CP] Check Pods Manifest.lock */ = {
@@ -628,42 +628,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		792378594DC186FEF9B2B101 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JustTweak-iOS/JustTweak.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7D84EDB369BD97C8EE29CD2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS)-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JustTweak-tvOS/JustTweak.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D091E77B31A41EDFD56D966A /* [CP-User] TweakAccessorGenerator */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,7 +636,7 @@
 			name = "[CP-User] TweakAccessorGenerator";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
+			shellScript = "$SRCROOT/../Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
 		};
 		D2F894A2A9B802CCF5D931F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -700,7 +664,43 @@
 			name = "[CP-User] TweakAccessorGenerator";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
+			shellScript = "$SRCROOT/../Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
+		};
+		EFB8E95578CCDE5812B6E39E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-tvOS/JustTweak.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (tvOS)/Pods-JustTweakExample (tvOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B242ED437F798DD6FC23F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-macOS/JustTweak.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		F5A49B5668B685B4C4541E1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -732,7 +732,7 @@
 			name = "[CP-User] TweakAccessorGenerator";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
+			shellScript = "$SRCROOT/../Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
 		};
 /* End PBXShellScriptBuildPhase section */
 

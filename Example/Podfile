@@ -4,7 +4,7 @@ use_frameworks!
 def shared_pod
   pod 'JustTweak', :path => '../'
   script_phase :name => 'TweakAccessorGenerator',
-               :script => '$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \
+               :script => '$SRCROOT/../Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \
                -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \
                -o $SRCROOT/JustTweak/Accessors/ \
                -c $SRCROOT/JustTweak/CodeGeneration/',
