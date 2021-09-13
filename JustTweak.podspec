@@ -15,15 +15,15 @@ JustTweak is a framework for feature flagging, locally and remotely configure an
                                 'Dimitar Chakarov' => 'dimitar.chakarov@justeattakeaway.com' }
   s.source                  = { :git => 'https://github.com/justeat/JustTweak.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target   = '15.0'
-  s.osx.deployment_target = "12.0"
-  s.watchos.deployment_target = "8.0"
-  s.tvos.deployment_target = "15.0"
+  s.ios.deployment_target       = '15.0'
+  s.osx.deployment_target       = "12.0"
+  s.watchos.deployment_target   = "8.0"
+  s.tvos.deployment_target      = "15.0"
 
   s.swift_version           = '5.1'
 
-  s.source_files            = 'Sources/JustTweak/Classes/**/*.swift'
-  s.resource_bundle         = { 'JustTweak' => 'Sources/JustTweak/Assets/en.lproj/*' }
+  s.source_files            = 'JustTweak/Classes/**/*.swift'
+  s.resource_bundle         = { 'JustTweak' => 'JustTweak/Assets/en.lproj/*' }
 
   s.preserve_paths = [
     '_TweakAccessorGenerator',
@@ -32,7 +32,7 @@ JustTweak is a framework for feature flagging, locally and remotely configure an
   # Ensure the generator script are callable via
   # ${PODS_ROOT}/<name>
   s.prepare_command = <<-PREPARE_COMMAND_END
-    cp -f ./Sources/JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator ./_TweakAccessorGenerator
+    cp -f ./JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator ./_TweakAccessorGenerator
   PREPARE_COMMAND_END
 
 end
