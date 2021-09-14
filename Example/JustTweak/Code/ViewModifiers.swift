@@ -21,21 +21,3 @@ extension View {
         modifier(NavigationViewStyleStack())
     }
 }
-
-fileprivate struct InlineNavigationBarTitle: ViewModifier {
-    let title: String
-    func body(content: Content) -> some View {
-        #if os(iOS)
-        content
-            .navigationBarTitle(title, displayMode: .inline)
-        #else
-        content
-        #endif
-    }
-}
-
-extension View {
-    func inlineNavigationBarTitle(_ title: String) -> some View {
-        modifier(InlineNavigationBarTitle(title: title))
-    }
-}

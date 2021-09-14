@@ -16,7 +16,7 @@ JustTweak is a framework for feature flagging, locally and remotely configure an
   s.source                  = { :git => 'https://github.com/justeat/JustTweak.git', :tag => s.version.to_s }
 
   s.ios.deployment_target       = '14.0'
-  s.osx.deployment_target       = "12.0"
+  s.osx.deployment_target       = "11.0"
   s.watchos.deployment_target   = "8.0"
   s.tvos.deployment_target      = "14.0"
 

@@ -36,7 +36,7 @@ public struct TweakView: View {
             }
         }
         .searchable(text: $viewModel.searchText, placeholder: "Search Tweaks")
-        .navigationBarTitle("Edit Configuration")
+        .navigationTitle("Edit Configuration")
     }
 
     private struct TweakName: View {

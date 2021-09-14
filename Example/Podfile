@@ -21,7 +21,7 @@ target 'JustTweakExample (iOS)' do
 end
 
 target 'JustTweakExample (macOS)' do
-  platform :osx, '12.0'
+  platform :osx, '11.0'
   shared_pod
 end
 

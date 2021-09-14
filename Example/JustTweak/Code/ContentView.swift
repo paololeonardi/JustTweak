@@ -60,7 +60,7 @@ struct ContentView: View {
                     .padding()
                 }
             }
-            .inlineNavigationBarTitle("JustTweak")
+            .navigationTitle("JustTweak")
         }
         .sheet(isPresented: $presentTweakView) {
             NavigationView {
