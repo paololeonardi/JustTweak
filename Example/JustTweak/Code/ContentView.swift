@@ -39,12 +39,12 @@ struct ContentView: View {
                             .font(.headline)
                             .padding()
                         Rectangle()
-                            .border(.blue, width: 5)
+                            .border(Color.blue, width: 5)
                             .foregroundColor(backgroundColor)
                     }
                     #if !os(tvOS)
-                    .gesture(doubleTapGesture)
-                    .simultaneousGesture(singleTapGesture)
+//                    .gesture(doubleTapGesture)
+//                    .simultaneousGesture(singleTapGesture)
                     #endif
 
                     VStack(spacing: 16) {
@@ -60,9 +60,7 @@ struct ContentView: View {
                     .padding()
                 }
             }
-            #if os(iOS)
-            .navigationBarTitle("JustTweak", displayMode: .inline)
-            #endif
+            .inlineNavigationBarTitle("JustTweak")
         }
         .sheet(isPresented: $presentTweakView) {
             NavigationView {

@@ -31,14 +31,14 @@ struct ExampleForJustTweak: App {
                         )
                     }
             }
-            #if os(iOS)
-            .navigationViewStyle(.stack)
-            #endif
+            .stackNavigationViewStyle()
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {
             case .active:
-                showAlert = tweakAccessor.shouldShowAlert
+                DispatchQueue.main.async {
+                    showAlert = tweakAccessor.shouldShowAlert
+                }
             default:
                 break
             }

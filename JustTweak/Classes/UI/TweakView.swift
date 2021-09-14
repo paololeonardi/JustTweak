@@ -35,8 +35,8 @@ public struct TweakView: View {
                 }
             }
         }
-        .searchable(text: $viewModel.searchText, prompt: "Search Tweaks")
-        .navigationTitle("Edit Configuration")
+        .searchable(text: $viewModel.searchText, placeholder: "Search Tweaks")
+        .navigationBarTitle("Edit Configuration")
     }
 
     private struct TweakName: View {
@@ -84,6 +84,29 @@ public struct TweakView: View {
                     .multilineTextAlignment(.trailing)
                     .frame(minWidth: 50)
             }
+        }
+    }
+}
+
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+fileprivate struct SearchableModifier: ViewModifier {
+    let text: Binding<String>
+    let prompt: LocalizedStringKey
+
+    func body(content: Content) -> some View {
+        content
+            .searchable(text: text, placeholder: prompt)
+    }
+}
+
+extension View {
+
+    @ViewBuilder
+    func searchable(text: Binding<String>, placeholder: LocalizedStringKey) -> some View {
+        if #available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *) {
+            modifier(SearchableModifier(text: text, prompt: placeholder))
+        } else {
+            self
         }
     }
 }

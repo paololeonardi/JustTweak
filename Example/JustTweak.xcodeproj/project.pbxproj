@@ -16,6 +16,9 @@
 		4F6422A721A4205B002B69F0 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
 		4F7103EE23859CFE0021E4AF /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7103ED23859CFD0021E4AF /* CustomOperators.swift */; };
 		5212A44E26CEFA210001B0A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5212A44D26CEFA210001B0A1 /* Preview Assets.xcassets */; };
+		52243E1126F01DEF00D71A09 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52243E1026F01DEF00D71A09 /* ViewModifiers.swift */; };
+		52243E1226F01DEF00D71A09 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52243E1026F01DEF00D71A09 /* ViewModifiers.swift */; };
+		52243E1326F01DEF00D71A09 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52243E1026F01DEF00D71A09 /* ViewModifiers.swift */; };
 		52855D2B26CEFDD300C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
 		52855D2C26CEFDD300C9748D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
 		52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -85,6 +88,7 @@
 		5212A43326CEF99E0001B0A1 /* JustTweakExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTweakExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5212A44426CEFA210001B0A1 /* JustTweakExample (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JustTweakExample (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5212A44D26CEFA210001B0A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52243E1026F01DEF00D71A09 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		5273218926AA1EE9009BF645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5273218B26AB86BC009BF645 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				5273218926AA1EE9009BF645 /* ContentView.swift */,
 				5273218B26AB86BC009BF645 /* ContentViewModel.swift */,
+				52243E1026F01DEF00D71A09 /* ViewModifiers.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -737,6 +742,7 @@
 				52855D2F26CEFDE500C9748D /* Symbols.swift in Sources */,
 				52855D3326CEFDF400C9748D /* GeneratedTweakAccessor.swift in Sources */,
 				52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */,
+				52243E1126F01DEF00D71A09 /* ViewModifiers.swift in Sources */,
 				52855D3226CEFDF400C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
 				52855D2C26CEFDD300C9748D /* ContentViewModel.swift in Sources */,
 				52855D2E26CEFDDF00C9748D /* ExampleProtocol.swift in Sources */,
@@ -752,6 +758,7 @@
 				52855D4A26CEFE7100C9748D /* Symbols.swift in Sources */,
 				52855D3E26CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
 				52855D3C26CEFE1C00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
+				52243E1226F01DEF00D71A09 /* ViewModifiers.swift in Sources */,
 				52855D4026CEFE1D00C9748D /* ContentView.swift in Sources */,
 				52855D3D26CEFE1C00C9748D /* GeneratedTweakAccessor.swift in Sources */,
 				52855D3B26CEFE1C00C9748D /* ContentViewModel.swift in Sources */,
@@ -767,6 +774,7 @@
 				52855D4B26CEFE7100C9748D /* Symbols.swift in Sources */,
 				52855D4626CEFE1D00C9748D /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
 				52855D4426CEFE1D00C9748D /* GeneratedTweakAccessor+Constants.swift in Sources */,
+				52243E1326F01DEF00D71A09 /* ViewModifiers.swift in Sources */,
 				52855D4826CEFE1D00C9748D /* ContentView.swift in Sources */,
 				52855D4526CEFE1D00C9748D /* GeneratedTweakAccessor.swift in Sources */,
 				52855D4326CEFE1D00C9748D /* ContentViewModel.swift in Sources */,
@@ -837,7 +845,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -877,7 +885,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
@@ -1087,7 +1095,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DCONFIGURATION_DEBUG";
@@ -1139,7 +1147,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-DCONFIGURATION_DEBUG";
 				SDKROOT = iphoneos;
