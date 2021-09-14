@@ -26,6 +26,6 @@ target 'JustTweakExample (macOS)' do
 end
 
 target 'JustTweakExample (tvOS)' do
-  platform :tvos, '15.0'
+  platform :tvos, '14.0'
   shared_pod
 end

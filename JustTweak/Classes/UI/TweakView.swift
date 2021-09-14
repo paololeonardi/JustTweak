@@ -95,7 +95,7 @@ fileprivate struct SearchableModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .searchable(text: text, placeholder: prompt)
+            .searchable(text: text, prompt: prompt)
     }
 }
 
