@@ -29,3 +29,8 @@ target 'JustTweakExample (tvOS)' do
   platform :tvos, '14.0'
   shared_pod
 end
+
+target 'JustTweakExample (WatchOS) WatchKit Extension' do
+  platform :watchos, '7.0'
+  shared_pod
+end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2150836EB7638C73213CB843 /* Pods_JustTweakExample__tvOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B692B8FC898AF770673D657 /* Pods_JustTweakExample__tvOS_.framework */; };
 		40B83F830F81257E9E9CFC78 /* Pods_JustTweakExample__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279D09BF73E25D22D2FB24E /* Pods_JustTweakExample__iOS_.framework */; };
+		43A8BF9EB37846BE5CDD1566 /* Pods_JustTweakExample__WatchOS__WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2601EC06E93720DDCB219A /* Pods_JustTweakExample__WatchOS__WatchKit_Extension.framework */; };
 		4F0372B22387FE79003CA58E /* TweakManagerCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0372B12387FE79003CA58E /* TweakManagerCacheTests.swift */; };
 		4F38E0F1236E1BB60070BD17 /* PropertyWrappersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F38E0F0236E1BB60070BD17 /* PropertyWrappersTests.swift */; };
 		4F43583223E732DD00FD60A7 /* TweakManager+PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43583123E732DD00FD60A7 /* TweakManager+PresentationTests.swift */; };
@@ -19,6 +20,22 @@
 		52243E1126F01DEF00D71A09 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52243E1026F01DEF00D71A09 /* ViewModifiers.swift */; };
 		52243E1226F01DEF00D71A09 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52243E1026F01DEF00D71A09 /* ViewModifiers.swift */; };
 		52243E1326F01DEF00D71A09 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52243E1026F01DEF00D71A09 /* ViewModifiers.swift */; };
+		5252EA5A26F149650072ABC7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282C54326F13BE0005A0CB6 /* ComplicationController.swift */; };
+		5282C53526F13BE0005A0CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5282C53426F13BE0005A0CB6 /* Assets.xcassets */; };
+		5282C53B26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5282C53A26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5282C54626F13BE1005A0CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5282C54526F13BE1005A0CB6 /* Assets.xcassets */; };
+		5282C54926F13BE1005A0CB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5282C54826F13BE1005A0CB6 /* Preview Assets.xcassets */; };
+		5282C55626F13DAA005A0CB6 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52243E1026F01DEF00D71A09 /* ViewModifiers.swift */; };
+		5282C55726F13DAA005A0CB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		5282C55826F13DAA005A0CB6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
+		5282C55926F13DAA005A0CB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
+		5282C55A26F13DB1005A0CB6 /* GeneratedTweakAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231D2630365500468F8C /* GeneratedTweakAccessor.swift */; };
+		5282C55B26F13DB1005A0CB6 /* GeneratedTweakAccessor+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231B2630365500468F8C /* GeneratedTweakAccessor+Constants.swift */; };
+		5282C55C26F13DB1005A0CB6 /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */; };
+		5282C55D26F13DC2005A0CB6 /* LocalTweaks_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F65E89E2629D083009E8C3B /* LocalTweaks_example.json */; };
+		5282C55E26F13DC2005A0CB6 /* LocalTweaks_TopPriority_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 61D2DEBA1D9ECD4D00E6C6FA /* LocalTweaks_TopPriority_example.json */; };
+		5282C55F26F13DC5005A0CB6 /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB283E262F321500A7A89A /* ExampleProtocol.swift */; };
+		5282C56026F13DCA005A0CB6 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6422A521A4205B002B69F0 /* Symbols.swift */; };
 		52855D2B26CEFDD300C9748D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218926AA1EE9009BF645 /* ContentView.swift */; };
 		52855D2C26CEFDD300C9748D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273218B26AB86BC009BF645 /* ContentViewModel.swift */; };
 		52855D2D26CEFDD300C9748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -64,6 +81,30 @@
 		FAFC2CE778BA23D17261F02E /* Pods_JustTweakExample__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00F6449E64C7F1055746F9D /* Pods_JustTweakExample__macOS_.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5282C53C26F13BE0005A0CB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5282C53926F13BE0005A0CB6;
+			remoteInfo = "JustTweakExample (WatchOS) WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5282C55026F13BE1005A0CB6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5282C53B26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0279D09BF73E25D22D2FB24E /* Pods_JustTweakExample__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweakExample__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A3231A2630365500468F8C /* GeneratedConfigurationAccessor+ExampleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GeneratedConfigurationAccessor+ExampleProtocol.swift"; sourceTree = "<group>"; };
@@ -72,6 +113,7 @@
 		12EB283E262F321500A7A89A /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
 		278C3074A413A54D2E1F41C3 /* Pods-JustTweakExample (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (macOS).debug.xcconfig"; path = "Target Support Files/Pods-JustTweakExample (macOS)/Pods-JustTweakExample (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		2A3A7CF0048CBC9CF1917718 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2E699B84BDA16049BE502960 /* Pods-JustTweakExample (WatchOS) WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (WatchOS) WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-JustTweakExample (WatchOS) WatchKit Extension/Pods-JustTweakExample (WatchOS) WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		4F0372B12387FE79003CA58E /* TweakManagerCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakManagerCacheTests.swift; sourceTree = "<group>"; };
 		4F30EA6B21ADA06A00AECF77 /* FirebaseTweakProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTweakProvider.swift; sourceTree = "<group>"; };
 		4F30EA6C21ADA06A00AECF77 /* OptimizelyTweakProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptimizelyTweakProvider.swift; sourceTree = "<group>"; };
@@ -91,6 +133,14 @@
 		52243E1026F01DEF00D71A09 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		5273218926AA1EE9009BF645 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5273218B26AB86BC009BF645 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5282C52F26F13BDF005A0CB6 /* JustTweakExample (WatchOS) WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JustTweakExample (WatchOS) WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5282C53426F13BE0005A0CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5282C53A26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JustTweakExample (WatchOS) WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5282C54326F13BE0005A0CB6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5282C54526F13BE1005A0CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5282C54826F13BE1005A0CB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5282C54A26F13BE1005A0CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EEB579C0828F1109DCFA707 /* Pods-JustTweakExample (WatchOS) WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (WatchOS) WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-JustTweakExample (WatchOS) WatchKit Extension/Pods-JustTweakExample (WatchOS) WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -121,6 +171,7 @@
 		9D9C8012F0763F982B90BB92 /* Pods_JustTweak_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweak_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00F6449E64C7F1055746F9D /* Pods_JustTweakExample__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweakExample__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF8B0E7BBD67E1DB53BE129 /* Pods-JustTweakExample (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (iOS).release.xcconfig"; path = "Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		DF2601EC06E93720DDCB219A /* Pods_JustTweakExample__WatchOS__WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustTweakExample__WatchOS__WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBB4266B01AB511AEB16CC3 /* Pods-JustTweakExample (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTweakExample (iOS).debug.xcconfig"; path = "Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,11 +200,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5282C53726F13BE0005A0CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A8BF9EB37846BE5CDD1566 /* Pods_JustTweakExample__WatchOS__WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE21AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D37F050A2C7688E21EA7AAAB /* Pods_JustTweak_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91969C37DB94D7F61CE3008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +309,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5282C53326F13BDF005A0CB6 /* JustTweakExample (WatchOS) WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5282C53426F13BE0005A0CB6 /* Assets.xcassets */,
+			);
+			path = "JustTweakExample (WatchOS) WatchKit App";
+			sourceTree = "<group>";
+		};
+		5282C53E26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5282C54326F13BE0005A0CB6 /* ComplicationController.swift */,
+				5282C54526F13BE1005A0CB6 /* Assets.xcassets */,
+				5282C54A26F13BE1005A0CB6 /* Info.plist */,
+				5282C54726F13BE1005A0CB6 /* Preview Content */,
+			);
+			path = "JustTweakExample (WatchOS) WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5282C54726F13BE1005A0CB6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5282C54826F13BE1005A0CB6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		52A6EF46E738E45003E38AF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +347,8 @@
 				96573D11377CC9C9C8FB3CE5 /* Pods-JustTweakExample (tvOS).release.xcconfig */,
 				80C1B298BA69B88E0D53A92F /* Pods-JustTweak_Tests.debug.xcconfig */,
 				63F5FDF840B7AD7D976F900E /* Pods-JustTweak_Tests.release.xcconfig */,
+				5EEB579C0828F1109DCFA707 /* Pods-JustTweakExample (WatchOS) WatchKit Extension.debug.xcconfig */,
+				2E699B84BDA16049BE502960 /* Pods-JustTweakExample (WatchOS) WatchKit Extension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -265,6 +360,7 @@
 				C00F6449E64C7F1055746F9D /* Pods_JustTweakExample__macOS_.framework */,
 				8B692B8FC898AF770673D657 /* Pods_JustTweakExample__tvOS_.framework */,
 				9D9C8012F0763F982B90BB92 /* Pods_JustTweak_Tests.framework */,
+				DF2601EC06E93720DDCB219A /* Pods_JustTweakExample__WatchOS__WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +372,8 @@
 				607FACD21AFB9204008FA782 /* Example for JustTweak */,
 				4F6422A421A4205B002B69F0 /* Shared */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				5282C53326F13BDF005A0CB6 /* JustTweakExample (WatchOS) WatchKit App */,
+				5282C53E26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension */,
 				607FACD11AFB9204008FA782 /* Products */,
 				52EA898226D6823400CA3EFE /* Frameworks */,
 				52A6EF46E738E45003E38AF2 /* Pods */,
@@ -289,6 +387,8 @@
 				5212A42E26CEF99E0001B0A1 /* JustTweakExample.app */,
 				5212A43326CEF99E0001B0A1 /* JustTweakExample.app */,
 				5212A44426CEFA210001B0A1 /* JustTweakExample (tvOS).app */,
+				5282C52F26F13BDF005A0CB6 /* JustTweakExample (WatchOS) WatchKit App.app */,
+				5282C53A26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -447,6 +547,44 @@
 			productReference = 5212A44426CEFA210001B0A1 /* JustTweakExample (tvOS).app */;
 			productType = "com.apple.product-type.application";
 		};
+		5282C52E26F13BDF005A0CB6 /* JustTweakExample (WatchOS) WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5282C55426F13BE1005A0CB6 /* Build configuration list for PBXNativeTarget "JustTweakExample (WatchOS) WatchKit App" */;
+			buildPhases = (
+				5282C52D26F13BDF005A0CB6 /* Resources */,
+				5282C55026F13BE1005A0CB6 /* Embed App Extensions */,
+				D91969C37DB94D7F61CE3008 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5282C53D26F13BE0005A0CB6 /* PBXTargetDependency */,
+			);
+			name = "JustTweakExample (WatchOS) WatchKit App";
+			productName = "JustTweakExample (WatchOS) WatchKit App";
+			productReference = 5282C52F26F13BDF005A0CB6 /* JustTweakExample (WatchOS) WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5282C53926F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5282C55326F13BE1005A0CB6 /* Build configuration list for PBXNativeTarget "JustTweakExample (WatchOS) WatchKit Extension" */;
+			buildPhases = (
+				D746D8A4F9A395880ADEA071 /* [CP] Check Pods Manifest.lock */,
+				77AEE7CFDDEF7ED8D5BB81BE /* [CP-User] TweakAccessorGenerator */,
+				5282C53626F13BE0005A0CB6 /* Sources */,
+				5282C53726F13BE0005A0CB6 /* Frameworks */,
+				5282C53826F13BE0005A0CB6 /* Resources */,
+				4A29FE7131FC995867B3C84D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JustTweakExample (WatchOS) WatchKit Extension";
+			productName = "JustTweakExample (WatchOS) WatchKit Extension";
+			productReference = 5282C53A26F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		607FACE41AFB9204008FA782 /* JustTweak_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JustTweak_Tests" */;
@@ -490,6 +628,16 @@
 						DevelopmentTeam = 695GNFL2MK;
 						ProvisioningStyle = Automatic;
 					};
+					5282C52E26F13BDF005A0CB6 = {
+						CreatedOnToolsVersion = 13.0;
+						DevelopmentTeam = 695GNFL2MK;
+						ProvisioningStyle = Automatic;
+					};
+					5282C53926F13BE0005A0CB6 = {
+						CreatedOnToolsVersion = 13.0;
+						DevelopmentTeam = 695GNFL2MK;
+						ProvisioningStyle = Automatic;
+					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1020;
@@ -515,6 +663,8 @@
 				5212A42D26CEF99E0001B0A1 /* JustTweakExample (iOS) */,
 				5212A43226CEF99E0001B0A1 /* JustTweakExample (macOS) */,
 				5212A44326CEFA210001B0A1 /* JustTweakExample (tvOS) */,
+				5282C52E26F13BDF005A0CB6 /* JustTweakExample (WatchOS) WatchKit App */,
+				5282C53926F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -545,6 +695,25 @@
 				52855D3926CEFE1400C9748D /* LocalTweaks_TopPriority_example.json in Resources */,
 				5212A44E26CEFA210001B0A1 /* Preview Assets.xcassets in Resources */,
 				52855D3826CEFE1400C9748D /* LocalTweaks_example.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5282C52D26F13BDF005A0CB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5282C53526F13BE0005A0CB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5282C53826F13BE0005A0CB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5282C54926F13BE1005A0CB6 /* Preview Assets.xcassets in Resources */,
+				5282C55E26F13DC2005A0CB6 /* LocalTweaks_TopPriority_example.json in Resources */,
+				5282C54626F13BE1005A0CB6 /* Assets.xcassets in Resources */,
+				5282C55D26F13DC2005A0CB6 /* LocalTweaks_example.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +829,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4A29FE7131FC995867B3C84D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (WatchOS) WatchKit Extension/Pods-JustTweakExample (WatchOS) WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JustTweak-watchOS/JustTweak.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JustTweak.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (WatchOS) WatchKit Extension/Pods-JustTweakExample (WatchOS) WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4EA91C95DB53596792357308 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,6 +891,16 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		77AEE7CFDDEF7ED8D5BB81BE /* [CP-User] TweakAccessorGenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] TweakAccessorGenerator";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \\\n               -l $SRCROOT/JustTweak/TweakProviders/LocalTweaks_example.json \\\n               -o $SRCROOT/JustTweak/Accessors/ \\\n               -c $SRCROOT/JustTweak/CodeGeneration/";
+		};
 		A98162F2A62420DF987058C2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -720,6 +917,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustTweakExample (iOS)/Pods-JustTweakExample (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D746D8A4F9A395880ADEA071 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustTweakExample (WatchOS) WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F130E31143CFED1FCF7FF86C /* [CP-User] TweakAccessorGenerator */ = {
@@ -783,6 +1002,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5282C53626F13BE0005A0CB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5282C55826F13DAA005A0CB6 /* ContentViewModel.swift in Sources */,
+				5282C55A26F13DB1005A0CB6 /* GeneratedTweakAccessor.swift in Sources */,
+				5282C55C26F13DB1005A0CB6 /* GeneratedConfigurationAccessor+ExampleProtocol.swift in Sources */,
+				5282C55926F13DAA005A0CB6 /* ContentView.swift in Sources */,
+				5282C55726F13DAA005A0CB6 /* AppDelegate.swift in Sources */,
+				5282C56026F13DCA005A0CB6 /* Symbols.swift in Sources */,
+				5282C55F26F13DC5005A0CB6 /* ExampleProtocol.swift in Sources */,
+				5252EA5A26F149650072ABC7 /* ComplicationController.swift in Sources */,
+				5282C55B26F13DB1005A0CB6 /* GeneratedTweakAccessor+Constants.swift in Sources */,
+				5282C55626F13DAA005A0CB6 /* ViewModifiers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE11AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -806,6 +1042,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5282C53D26F13BE0005A0CB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5282C53926F13BE0005A0CB6 /* JustTweakExample (WatchOS) WatchKit Extension */;
+			targetProxy = 5282C53C26F13BE0005A0CB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
@@ -1047,6 +1291,156 @@
 			};
 			name = Release;
 		};
+		5282C54E26F13BE1005A0CB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = JustTweakExample__WatchOS__WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "JustTweakExample (WatchOS) WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justeat.JustTweakExample--WatchOS-.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		5282C54F26F13BE1005A0CB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = JustTweakExample__WatchOS__WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "JustTweakExample (WatchOS) WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justeat.JustTweakExample--WatchOS-.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		5282C55126F13BE1005A0CB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEB579C0828F1109DCFA707 /* Pods-JustTweakExample (WatchOS) WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"JustTweakExample (WatchOS) WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JustTweakExample (WatchOS) WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JustTweakExample (WatchOS) WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Just Eat. All rights reserved.";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justeat.JustTweakExample--WatchOS-.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		5282C55226F13BE1005A0CB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E699B84BDA16049BE502960 /* Pods-JustTweakExample (WatchOS) WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JustTweakExample (WatchOS) WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 695GNFL2MK;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JustTweakExample (WatchOS) WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JustTweakExample (WatchOS) WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Just Eat. All rights reserved.";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justeat.JustTweakExample--WatchOS-.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1219,6 +1613,24 @@
 			buildConfigurations = (
 				5212A45026CEFA210001B0A1 /* Debug */,
 				5212A45126CEFA210001B0A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5282C55326F13BE1005A0CB6 /* Build configuration list for PBXNativeTarget "JustTweakExample (WatchOS) WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5282C55126F13BE1005A0CB6 /* Debug */,
+				5282C55226F13BE1005A0CB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5282C55426F13BE1005A0CB6 /* Build configuration list for PBXNativeTarget "JustTweakExample (WatchOS) WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5282C54E26F13BE1005A0CB6 /* Debug */,
+				5282C54F26F13BE1005A0CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
