@@ -41,8 +41,10 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "32">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/JustTweakExample (WatchOS) WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5282C52E26F13BDF005A0CB6"
@@ -50,7 +52,7 @@
             BlueprintName = "JustTweakExample (WatchOS) WatchKit App"
             ReferencedContainer = "container:JustTweak.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -59,8 +61,10 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "32">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/JustTweakExample (WatchOS) WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5282C52E26F13BDF005A0CB6"
@@ -68,7 +72,16 @@
             BlueprintName = "JustTweakExample (WatchOS) WatchKit App"
             ReferencedContainer = "container:JustTweak.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5282C52E26F13BDF005A0CB6"
+            BuildableName = "JustTweakExample (WatchOS) WatchKit App.app"
+            BlueprintName = "JustTweakExample (WatchOS) WatchKit App"
+            ReferencedContainer = "container:JustTweak.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

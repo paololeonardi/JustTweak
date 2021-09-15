@@ -19,35 +19,39 @@ struct ExampleForJustTweak: App {
 
     var body: some Scene {
         WindowGroup {
-            ZStack {
-                makeContentView()
-                Rectangle()
-                    .foregroundColor(.clear)
-                    .alert(isPresented: $showAlert) {
-                        Alert(
-                            title: Text("Hello"),
-                            message: Text("Welcome to this Demo app!"),
-                            dismissButton: .default(Text("Continue"))
-                        )
-                    }
+            NavigationView {
+                #if os(OSX)
+                sidebar
+                #endif
+                contentView
             }
             .stackNavigationViewStyle()
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Hello"),
+                    message: Text("Welcome to this Demo app!"),
+                    dismissButton: .default(Text("Continue"))
+                )
+            }
         }
         .onChange(of: scenePhase) { newScenePhase in
-            switch newScenePhase {
-            case .active:
-                DispatchQueue.main.async {
-                    showAlert = tweakAccessor.shouldShowAlert
-                }
-            default:
-                break
+            guard case .active = newScenePhase else { return }
+            DispatchQueue.main.async {
+                showAlert = tweakAccessor.shouldShowAlert
             }
         }
     }
 
-    private func makeContentView() -> some View {
+    @ViewBuilder
+    private var sidebar: some View {
+        TweakView(tweakManager: tweakAccessor.tweakManager)
+            .frame(minWidth: 350)
+    }
+
+    @ViewBuilder
+    private var contentView: some View {
         let viewModel = ContentViewModel(tweakAccessor: tweakAccessor, tweakManager: tweakAccessor.tweakManager)
-        return ContentView(viewModel: viewModel)
+        ContentView(viewModel: viewModel)
     }
 
     static func makeTweakManager() -> TweakManager {

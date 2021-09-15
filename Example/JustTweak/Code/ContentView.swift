@@ -23,60 +23,66 @@ struct ContentView: View {
         }
     }
 
+    @ViewBuilder
+    private func rectanglesView(with height: CGFloat) -> some View {
+        VStack {
+            if viewModel.tweakAccessor.canShowRedView {
+                let alpha = viewModel.tweakAccessor.redViewAlpha
+                Rectangle()
+                    .foregroundColor(.red.opacity(alpha))
+            }
+            if viewModel.tweakAccessor.canShowYellowView {
+                Rectangle()
+                    .foregroundColor(.yellow)
+            }
+            if viewModel.tweakAccessor.canShowGreenView {
+                Rectangle()
+                    .foregroundColor(.green)
+            }
+        }
+        .frame(height: height)
+    }
+
+    @ViewBuilder
+    private var tweakViewButtons: some View {
+        VStack(spacing: 16) {
+            #if os(iOS)
+            Button("Change configuration (present)") {
+                presentTweakView.toggle()
+            }
+            #endif
+            #if !os(OSX)
+            NavigationLink(destination: viewModel.tweakView) {
+                Text("Change configuration (push)")
+            }
+            #endif
+        }
+        .padding()
+    }
+
     var body: some View {
-        NavigationView {
+        VStack {
             GeometryReader { geometry in
                 ZStack {
                     viewBackground
                     ScrollView {
-                        VStack {
-                            VStack {
-                                VStack {
-                                    if viewModel.tweakAccessor.canShowRedView {
-                                        let alpha = viewModel.tweakAccessor.redViewAlpha
-                                        Rectangle()
-                                            .foregroundColor(.red.opacity(alpha))
-                                    }
-                                    if viewModel.tweakAccessor.canShowYellowView {
-                                        Rectangle()
-                                            .foregroundColor(.yellow)
-                                    }
-                                    if viewModel.tweakAccessor.canShowGreenView {
-                                        Rectangle()
-                                            .foregroundColor(.green)
-                                    }
-                                }
-                                .frame(width: geometry.size.width, height: geometry.size.height / 2)
-                                Text(viewModel.tweakAccessor.labelText)
-                                    .font(.headline)
-                                    .padding()
+                        VStack(spacing: 16) {
+                            rectanglesView(with: geometry.size.height / 2)
+
+                            Text(viewModel.tweakAccessor.labelText)
+                                .font(.headline)
+
+                            Button("Set meaning of life") {
+                                viewModel.setMeaningOfLife()
+                                showingAlert = true
                             }
 
-                            VStack(spacing: 16) {
-                                Button("Set meaning of life") {
-                                    viewModel.setMeaningOfLife()
-                                    showingAlert = true
-                                }
-
-                                Button("Change background color") {
-                                    backgroundColor = viewModel.randomColor()
-                                }
-                                .disabled(!viewModel.tweakAccessor.isTapGestureToChangeColorEnabled)
-                                .background(backgroundColor)
+                            Button("Change background color") {
+                                backgroundColor = viewModel.randomColor()
                             }
-                            .padding()
+                            .disabled(!viewModel.tweakAccessor.isTapGestureToChangeColorEnabled)
 
-                            VStack(spacing: 16) {
-                                #if os(iOS)
-                                Button("Change configuration (present)") {
-                                    presentTweakView.toggle()
-                                }
-                                #endif
-                                NavigationLink(destination: viewModel.tweakView) {
-                                    Text("Change configuration (push)")
-                                }
-                            }
-                            .padding()
+                            tweakViewButtons
                         }
                     }
                 }
