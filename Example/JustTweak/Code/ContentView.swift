@@ -16,11 +16,9 @@ struct ContentView: View {
 
     @ViewBuilder
     private var viewBackground: some View {
-        if backgroundColor != nil {
-            Rectangle()
-                .foregroundColor(backgroundColor)
-                .ignoresSafeArea()
-        }
+        Rectangle()
+            .foregroundColor(backgroundColor ?? .clear)
+            .ignoresSafeArea()
     }
 
     @ViewBuilder
