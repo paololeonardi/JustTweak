@@ -34,7 +34,13 @@ public struct Tweak {
         }
     }
     
-    public init(feature: String, variable: String, value: TweakValue, title: String? = nil, description: String? = nil, group: String? = nil, source: String? = nil) {
+    public init(feature: String,
+                variable: String,
+                value: TweakValue,
+                title: String? = nil,
+                description: String? = nil,
+                group: String? = nil,
+                source: String? = nil) {
         self.feature = feature
         self.variable = variable
         self.value = value
@@ -42,6 +48,22 @@ public struct Tweak {
         self.desc = description
         self.group = group
         self.source = source
+    }
+    
+    func mutatedCopy(feature: String? = nil,
+                     variable: String? = nil,
+                     value: TweakValue? = nil,
+                     title: String? = nil,
+                     description: String? = nil,
+                     group: String? = nil,
+                     source: String? = nil) -> Self {
+        Self(feature: feature ?? self.feature,
+             variable: variable ?? self.variable,
+             value: value ?? self.value,
+             title: title ?? self.title,
+             description: description ?? self.desc,
+             group: group ?? self.group,
+             source: source ?? self.source)
     }
 }
 

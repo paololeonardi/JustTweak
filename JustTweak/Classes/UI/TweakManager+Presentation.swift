@@ -20,6 +20,7 @@ extension TweakManager {
                                                     title: jsonTweak.title,
                                                     description: jsonTweak.desc,
                                                     group: jsonTweak.group)
+                        
                         let key = "\(feature)-\(variable)"
                         tweaks[key] = aggregatedTweak
                     }

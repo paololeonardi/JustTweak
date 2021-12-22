@@ -17,6 +17,14 @@ final public class TweakManager {
         }
     }
     
+    public var decryptionClosure: ((Tweak) -> TweakValue)? {
+        didSet {
+            for (index, _) in tweakProviders.enumerated() {
+                tweakProviders[index].decryptionClosure = decryptionClosure
+            }
+        }
+    }
+    
     public var useCache: Bool = false {
         didSet {
             if useCache != oldValue {
@@ -81,19 +89,21 @@ extension TweakManager: MutableTweakProvider {
             }
             
             var result: Tweak? = nil
-            for (_, configuration) in tweakProviders.enumerated() {
-                if let tweak = configuration.tweakWith(feature: feature, variable: variable) {
-                    logClosure?("Tweak '\(tweak)' found in configuration \(configuration))", .verbose)
+            for (_, tweakProvider) in tweakProviders.enumerated() {
+                if let tweak = tweakProvider.tweakWith(feature: feature, variable: variable) {
+                    logClosure?("Tweak '\(tweak)' found in configuration \(tweakProvider))", .verbose)
+                    
                     result = Tweak(feature: feature,
                                    variable: variable,
                                    value: tweak.value,
                                    title: tweak.title,
                                    group: tweak.group,
-                                   source: "\(type(of: configuration))")
+                                   source: "\(type(of: tweakProvider))")
                     break
                 }
                 else {
-                    logClosure?("Tweak with identifier '\(variable)' NOT found in configuration \(configuration))", .verbose)
+                    let logMessage = "Tweak with identifier '\(variable)' in configuration \(tweakProvider)) could NOT be found or has an invalid configuration"
+                    logClosure?(logMessage, .verbose)
                 }
             }
             if let result = result {

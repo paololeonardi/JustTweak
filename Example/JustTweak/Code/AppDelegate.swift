@@ -92,6 +92,11 @@ struct ExampleForJustTweak: App {
 
         let tweakManager = TweakManager(tweakProviders: tweakProviders)
         tweakManager.useCache = true
+        
+        tweakManager.decryptionClosure = { tweak in
+            String((tweak.value.stringValue ?? "").reversed())
+        }
+        
         return tweakManager
     }
 }

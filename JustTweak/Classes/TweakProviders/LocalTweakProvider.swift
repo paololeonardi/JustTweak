@@ -8,13 +8,14 @@ import Foundation
 final public class LocalTweakProvider {
     
     private enum EncodingKeys : String {
-        case Title, Description, Group, Value
+        case Title, Description, Group, Value, Encrypted
     }
     
     private let configurationFile: [String : [String : [String : AnyObject]]]
     private let fileURL: URL
     
     public var logClosure: LogClosure?
+    public var decryptionClosure: ((Tweak) -> TweakValue)?
     
     public var features: [String : [String]] {
         var storage: [String : [String]] = [:]
@@ -65,11 +66,25 @@ extension LocalTweakProvider: TweakProvider {
         let description = entry[EncodingKeys.Description.rawValue] as? String
         let group = entry[EncodingKeys.Group.rawValue] as? String
         let value = tweakValueFromJSONObject(entry[EncodingKeys.Value.rawValue])
-        return Tweak(feature: feature,
-                     variable: variable,
-                     value: value,
-                     title: title,
-                     description: description,
-                     group: group)
+        let isEncrypted = (entry[EncodingKeys.Encrypted.rawValue] as? Bool) ?? false
+        
+        let tweak = Tweak(feature: feature,
+                          variable: variable,
+                          value: value,
+                          title: title,
+                          description: description,
+                          group: group)
+        
+        if isEncrypted {
+            guard let decryptionClosure = decryptionClosure else {
+                // The configuration is not correct, it's encrypted, but there's no way to decrypt
+                // So return nil to indicate an error. Should be changed to a throwing function in the future
+                return nil
+            }
+            
+            return tweak.mutatedCopy(value: decryptionClosure(tweak))
+        } else {
+            return tweak
+        }
     }
 }

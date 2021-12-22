@@ -1,7 +1,6 @@
-
 Pod::Spec.new do |s|
   s.name                    = 'JustTweak'
-  s.version                 = '7.0.0'
+  s.version                 = '9.0.0'
   s.summary                 = 'A framework for feature flagging, locally and remotely configure and A/B test iOS apps.'
   s.description             = <<-DESC
 JustTweak is a framework for feature flagging, locally and remotely configure and A/B test iOS apps.
@@ -9,10 +8,7 @@ JustTweak is a framework for feature flagging, locally and remotely configure an
 
   s.homepage                = 'https://github.com/justeat/JustTweak'
   s.license                 = { :type => 'Apache 2.0', :file => 'LICENSE' }
-  s.authors                 = { 'Gianluca Tranchedone' => 'gianluca.tranchedone@just-eat.com',
-                                'Alberto De Bortoli' => 'alberto.debortoli@justeattakeaway.com',
-                                'Andrew Steven Grant' => 'andrew.grant@justeattakeaway.com',
-                                'Dimitar Chakarov' => 'dimitar.chakarov@justeattakeaway.com' }
+  s.author                  = 'Just Eat Takeaway iOS Team'
   s.source                  = { :git => 'https://github.com/justeat/JustTweak.git', :tag => s.version.to_s }
 
   s.ios.deployment_target       = '14.0'
