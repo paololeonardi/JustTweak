@@ -14,8 +14,7 @@ public class TweakViewModel: ObservableObject {
 
     public init(tweakManager: TweakManager) {
         self.tweakManager = tweakManager
-        rebuildSections()
-        filteredSections = sections
+        reloadSections()
     }
 
     private static func justTweakResourcesBundle() -> Bundle {
@@ -87,6 +86,10 @@ public class TweakViewModel: ObservableObject {
         tweakManager.set(value, feature: feature, variable: variable)
     }
 
+    func reloadSections() {
+        rebuildSections()
+        filteredSections = sections
+    }
 }
 
 extension TweakViewModel {

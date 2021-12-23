@@ -35,6 +35,7 @@ public struct TweakView: View {
                 }
             }
         }
+        .onAppear { viewModel.reloadSections() }
         .searchable(text: $viewModel.searchText, placeholder: "Search Tweaks")
         .navigationTitle("Edit Configuration")
     }
