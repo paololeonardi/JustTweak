@@ -49,6 +49,7 @@ public struct TweakView: View {
                     .font(.body)
                 Text(tweak.desc ?? "")
                     .font(.caption)
+                    .foregroundColor(.secondary)
             }
         }
     }
