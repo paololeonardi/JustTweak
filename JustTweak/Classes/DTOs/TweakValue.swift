@@ -30,7 +30,7 @@ public extension TweakValue {
     var boolValue: Bool {
         return self as? Bool ?? false
     }
-    
+
     var stringValue: String? {
         return self as? String
     }

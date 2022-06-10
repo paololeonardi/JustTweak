@@ -1,9 +1,7 @@
 source 'https://cdn.cocoapods.org/'
-
-platform :ios, '11.0'
 use_frameworks!
 
-target 'JustTweak_Example' do
+def shared_pod
   pod 'JustTweak', :path => '../'
   script_phase :name => 'TweakAccessorGenerator',
                :script => '$SRCROOT/../JustTweak/Assets/TweakAccessorGenerator.bundle/TweakAccessorGenerator \
@@ -11,11 +9,28 @@ target 'JustTweak_Example' do
                -o $SRCROOT/JustTweak/Accessors/ \
                -c $SRCROOT/JustTweak/CodeGeneration/',
                :execution_position => :before_compile
-  
-#  pod 'Firebase/RemoteConfig'
-#  pod 'OptimizelySDKiOS'
+end
+
+target 'JustTweakExample (iOS)' do
+  platform :ios, '14.0'
+  shared_pod
 
   target 'JustTweak_Tests' do
     inherit! :search_paths
   end
+end
+
+target 'JustTweakExample (macOS)' do
+  platform :osx, '11.0'
+  shared_pod
+end
+
+target 'JustTweakExample (tvOS)' do
+  platform :tvos, '14.0'
+  shared_pod
+end
+
+target 'JustTweakExample (WatchOS) WatchKit Extension' do
+  platform :watchos, '7.0'
+  shared_pod
 end

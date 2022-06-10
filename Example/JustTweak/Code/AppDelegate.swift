@@ -4,38 +4,61 @@
 //
 
 import JustTweak
-import UIKit
+import SwiftUI
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    var window: UIWindow?
-    var tweakAccessor: GeneratedTweakAccessor!
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        let navigationController = window?.rootViewController as! UINavigationController
-        let viewController = navigationController.topViewController as! ViewController
-        tweakAccessor = GeneratedTweakAccessor(with: makeTweakManager())
-        viewController.tweakAccessor = tweakAccessor
-        viewController.tweakManager = tweakAccessor.tweakManager
-        return true
+@main
+struct ExampleForJustTweak: App {
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var showAlert = false
+
+    private let tweakAccessor: GeneratedTweakAccessor
+
+    init() {
+        tweakAccessor = GeneratedTweakAccessor(with: Self.makeTweakManager())
     }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        if tweakAccessor.shouldShowAlert {
-            let alertController = UIAlertController(title: "Hello",
-                                                    message: "Welcome to this Demo app!",
-                                                    preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
-            window?.rootViewController?.present(alertController, animated: true, completion: nil)
+
+    var body: some Scene {
+        WindowGroup {
+            NavigationView {
+                #if os(OSX)
+                sidebar
+                #endif
+                contentView
+            }
+            .stackNavigationViewStyle()
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Hello"),
+                    message: Text("Welcome to this Demo app!"),
+                    dismissButton: .default(Text("Continue"))
+                )
+            }
+        }
+        .onChange(of: scenePhase) { newScenePhase in
+            guard case .active = newScenePhase else { return }
+            DispatchQueue.main.async {
+                showAlert = tweakAccessor.shouldShowAlert
+            }
         }
     }
-    
-    func makeTweakManager() -> TweakManager {
+
+    @ViewBuilder
+    private var sidebar: some View {
+        TweakView(tweakManager: tweakAccessor.tweakManager)
+            .frame(minWidth: 350)
+    }
+
+    @ViewBuilder
+    private var contentView: some View {
+        let viewModel = ContentViewModel(tweakAccessor: tweakAccessor, tweakManager: tweakAccessor.tweakManager)
+        ContentView(viewModel: viewModel)
+    }
+
+    static func makeTweakManager() -> TweakManager {
         var tweakProviders: [TweakProvider] = []
 
         // EphemeralTweakProvider
-        #if DEBUG || CONFIGURATION_UI_TESTS
+        #if CONFIGURATION_UI_TESTS
         let ephemeralTweakProvider_1 = NSMutableDictionary()
         tweakProviders.append(ephemeralTweakProvider_1)
         #endif
@@ -45,6 +68,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let userDefaultsTweakProvider_1 = UserDefaultsTweakProvider(userDefaults: UserDefaults.standard)
         tweakProviders.append(userDefaultsTweakProvider_1)
         #endif
+
+        // OptimizelyTweakProvider
+        // let optimizelyTweakProvider = OptimizelyTweakProvider()
+        // optimizelyTweakProvider.userId = UUID().uuidString
+        // tweakProviders.append(optimizelyTweakProvider)
+
+        // FirebaseTweakProvider
+        // let firebaseTweakProvider = FirebaseTweakProvider()
+        // tweakProviders.append(firebaseTweakProvider)
 
         // LocalTweakProvider
         #if DEBUG

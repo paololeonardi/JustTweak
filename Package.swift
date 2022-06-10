@@ -5,7 +5,10 @@ import PackageDescription
 let package = Package(
     name: "JustTweak",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v14),
+        .macOS(.v11),
+        .tvOS(.v14),
+        .watchOS(.v7)
     ],
     products: [
         .library(
@@ -15,7 +18,12 @@ let package = Package(
     targets: [
         .target(
             name: "JustTweak",
-            path: "JustTweak/"
+            path: "JustTweak"
+        ),
+        .testTarget(
+            name: "JustTweakTests",
+            dependencies: ["JustTweak"],
+            path: "Tests"
         )
     ]
 )
