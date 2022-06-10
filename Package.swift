@@ -1,10 +1,9 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.1
 
 import PackageDescription
 
 let package = Package(
     name: "JustTweak",
-    defaultLocalization: "en",
     platforms: [
         .iOS(.v14),
         .macOS(.v11),
@@ -16,18 +15,15 @@ let package = Package(
             name: "JustTweak",
             targets: ["JustTweak"]),
     ],
-    dependencies: [],
     targets: [
         .target(
             name: "JustTweak",
-            dependencies: [],
-            path: "JustTweak",
-            resources: [
-                .process("Assets/TweakAccessorGenerator.bundle")
-            ]),
+            path: "JustTweak"
+        ),
         .testTarget(
             name: "JustTweakTests",
             dependencies: ["JustTweak"],
-            path: "Tests"),
+            path: "Tests"
+        )
     ]
 )
